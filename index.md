@@ -9,7 +9,7 @@ You can use the [editor on GitHub](https://github.com/sosunnyproject/sosunnproje
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
-
+[daily-dev-log](./daily-dev-list.md)
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
@@ -26,7 +26,7 @@ Syntax highlighted code block
 2. List
 
 **Bold** and _Italic_ and `Code` text
-[daily-dev-log](./daily-dev-list.md)
+
 
 [Link](url) and ![Image](src)
 ```
