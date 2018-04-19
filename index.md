@@ -26,6 +26,7 @@ Syntax highlighted code block
 2. List
 
 **Bold** and _Italic_ and `Code` text
+[daily-dev-log](./daily-dev-list.md)
 
 [Link](url) and ![Image](src)
 ```
