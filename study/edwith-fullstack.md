@@ -164,7 +164,25 @@ oReq.send();
 ```
 
 
+## JSP
+
+#### JSP 라이프싸이클 기초
+- init, service, destroy 메소드 ...
+- JSP 파일 생성: 이클립스 -> Dynamic Web Project로 생성한 webdemo 프로젝트 -> WebContent 폴더 -> WEB-INF 폴더 -> something.jsp 
+- JSP는 Servlet으로 바뀌어서 (Servlet소스로 자동 컴파일되어서) 돌아간다고 했지?
+- something_jsp.java로 바껴있는 파일을 찾을 수 있다. 
+- 이 파일의 경로는... your_eclipse_workspace_name\.metadata\.plugins\org.eclipse.wst.server.core\tmp1_or_tmp0\work\Catalina\localhost\your_project_name\org\apache\jsp
+- 네가 jsp에 짠 코드는 jspService() 메소드에 들어가 있다.
+
+**실행순서**
+1. 브라우저가 웹서버에 JSP에 Request 신호  보냄
+2. 웹서버가 최초로 JSP 를 내보내는 경우, 
+- JSP 코드 --translation--> Servlet 코드
+- Servlet 코드를 Compile해서 실행가능한 bytecode로 변환 & (..-jsp.java 파일) class 파일 생성.
+- Servlet class를 로딩, 인스턴스를 생성.
+3. 서블릿이 실행되어 request 처리하고, response 를 생성한다. 
 
 
 
+- 
 
