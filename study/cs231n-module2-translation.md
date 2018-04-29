@@ -229,11 +229,76 @@ Conv Layer를 요약해보자.
 
 ### Pooling Layer
 
-### Normalization Layer
+ConvNet 설계에서는 연속적인 Conv 레이어들 사이 사이에다가 풀링 레이어를 주기적으로 끼어 넣어 주는 게 흔한 일이다. 이 풀링 함수는 점차적으로 (representation: 우리가 건드리는 이미지, 인풋부터 각 연산 이후의 이미지 본체들) spatial 사이즈를 줄여준다. 그 이유는 파라미터의 개수와 네트워크 연산 횟수를 줄임으로써 오버피팅을 조절하기 위해서다. 풀링 레이어는 독립적으로 인풋의 각 depth 슬라이스에서 MAX 연산을 실행하고, 그렇게 sptial 사이즈를 재조정한다. 가장 흔한 형태의 풀링 레이어는 필터 사이즈 2 * 2 와 스트라이드 2 를 downsamples (샘플 사이즈를 줄인 것들 일컫는 말)에 적용한 형태이다. 이 때, downsamples는 이미 사이즈를 한번씩 줄인 것들인데, 어떻게 줄인 거냐면: 각 깊이 슬라이스들의 폭 * 높이 간격이 2만큼씩 떨어져 있다. _내 설명: (즉 1:1:1, 3:3:2, 5:5:3
+이런식 -- 폭/높이는 2만큼씩 달라지고 깊이 슬라이스는 차례로. (맞는지 아닌지 모르겠...))_ 어쨌든, 이 흔한 풀링 형태는 75%의 액티베이션을 버린다.
+* The most common form is a pooling layer with filters of size 2x2 applied with a stride of 2 downsamples every depth slice in the input by 2 along both width and height, discarding 75% of the activations. *
 
-### Fully-connected layer
+이 경우에, 각 MAX 연산은 4개의 숫자에서 최댓값을 고른다. _내 설명: (little 2x2 region in some depth slice: 어떤 depth 슬라이스 에서는 작은 2x2 영역이다? 4개 숫자에서 고른다는건 이미 2x2 아닌가..? why saying little?)_ depth 차원은 바뀌지 않고 그대로 유지된다. 
 
-### Converting FC layers to CONV layers
+일반적으로 풀링 레이어를 이야기하자면...:
+
+- W1 x H1 x D1 볼륨 사이즈를 인풋으로 받는다.
+- 두개의 하이퍼 파라미터가 필요하다
+    - spatial 영역을 훑어갈 F
+    - 스트라이드 (간격) S
+- W2 x H2 x D2  볼륨 사이즈를 만들어 낸다:
+    - W2 = (W1 - F)/S + 1
+    - H2 = (H1 - F)/S + 1
+    - D2 = D1
+- 제로 파라미터라는 게 나오는데, 인풋의 고정 함수를 연산하기 때문이다 (???) *Introduces zero parameters since it computes a fixed function of the input*
+- 풀링 레이어에다가는 제로 패딩을 쓰는게 흔하지 않다는 건 알아두길.
+
+맥스 풀링 레이어를 쓸 때 보통 두 가지 방법 중 하나를 쓴다는 걸 알아두면 좋을 것이다. 풀링 레이어 F=3, S=2 (오버래핑 풀링 이라고 불린다. -겹치는-overlapping pooling), 더 자주 쓰이는 건 F=2, S=2. 큰 receptive field 사이즈를 가지는 풀링 사이즈는 너무 파괴적이다. (너무 영향 범위를 크게 잡으면 정보를 많이 잃을테니까. 4개중에서 1개 고르는 거랑 10개 중에서 한개 고르는 거랑, 나중에 아웃풋에서 정보를 찾으려면 아무래도 3개 버린게 9개 버린 것보다 정보가 많겟지?)
+
+**General Pooling  일반적 풀링**
+맥스 풀링말고도 더 알려주자면, 풀링 유닛(단위)들은 맥스가 아닌 평균(average) 혹은 L2-norm 등 다른 함수를 가질 수 있다. Average pooling은 역사적으로 자주 쓰여왔지만, 요즘은 맥스 풀링의 성능이 더 좋아서 잘 안쓰인다.
+
+![이미지](http://cs231n.github.io/assets/cnn/maxpool.jpeg)
+
+> 풀링 레이어는 인풋 볼륨의 각 depth 슬라이스에서 spatial 사이즈를 줄여준다.
+
+> 좌: 이 예시에서, 인풋 볼륨 사이즈는 224x224x64이고, 필터 사이즈 2, 스트라이드 2로 풀링을 해서, 아웃풋으로 112x112x64 볼륨 사이즈를 뱉어낸다. 이 때 주의해서 볼 것은 볼륨 깊이는 (64) 그대로 라는 것.
+
+> 우: 가장 흔한 downsampling 연산은 max pooling이고 여기서는 스트라이드에 2를 주었다. 그 말은, 2x2 사각형, 즉 4개의 숫자에서 1개의 최대값을 뽑는다는 소리이다.
+
+**Backpropagation 오차역전파법**
+backpropagation 챕터를 기억해보자. backward pass 할때 max(x,y)연산이 가지는 의미( *backward pass for a max operation* ??? )는 이렇게 해석할 수 있다. forward pass를 했을 때 가장 컸던 값인 인풋만 기울기 계산을 해서 뒤로 보낸다는 것이다. (routing: 신호를 보낸다의 의미로 생각). 그래서 풀링 레이어의 forward pass 과정에서는 max activation (swtiches라고도 부른다)의 인덱스 정보를 계속 킵해서, 오차역전파법을 할 때 gradient routing를 효율적으로 하는 게 일반적이다.
+
+**Getting rid of pooling 풀링없애버리기**
+많은 사람들이 풀링 연산을 싫어하고 그거 없이도 잘 할 수 있다고 생각한다. 예를 들어, [String for Simplicity_컨볼루션 간단하게 좀 하고싶다요](http://arxiv.org/abs/1412.6806) 논문에서는 풀링레이어 없애고 반복적인 CONV 레이어만 가지는 설계구조를 제시한다. 이 논문은 representation(이미지)의 사이즈를 줄이기 위해, CONV 레이어에서 큰 Stride 값을 가끔씩 주자고 제안한다. 풀링 레이어를 없애는 건 좋은 generative 모델들(variational autoencoders, gan 등)을 트레이닝 할 때 중요하다는 것도 발견되었다. 미래의 설계구조들은 아마 거의 혹은 아예 풀링 레이어를 안 쓸수도 있을 것 같다.
+
+## Normalization Layer
+사람들은 ConV-Net 설계에 쓰기 위해 많은 형태의 normalization 레이어들을 제안해왔다. 가끔은 진짜 뇌에서 발견한 inhibition scheme (숨바꼭질 전략)를 적용해보기 위한 의도도 있었다. 하지만, 이런 레이어들은 죽죽 인기를 잃었는데, 왜냐하면 실제로 적용했을 때 기여도가 매우 낮거나 없었기 때문이다. 다양한 normalization 종류에 대해서 자세히 알고싶으면 [cuda-convnet 라이브러리 API](http://code.google.com/p/cuda-convnet/wiki/LayerParams#Local_response_normalization_layer_(same_map))를 참고해라.
+
+### Fully-connected Layer (싸그리 다 연결)
+
+일반적인 신경망에서 보았듯이, fully-connected 레이어에 있는 뉴런들은 이전 레이어의 모든 액티베이션들과 완전하게 연결되어 있다. 그래서 그들의 액티베이션 _내 설명: (뉴런과 액티베이션의 연산 *그럼 액티베이션이란 그냥 보통 연산을 생각하면 되는가?* ???)_ 은 행렬 곱으로 연산될 수 있고, 그 다음에 편향을 더한다. 더 자세한 것은 이전 페이지의 [Neural Networks](http://cs231n.github.io/neural-networks-1/)를 참고해라.
+
+### Converting FC layers to CONV layers: FC 레이어에서 CONV 레이어로 바꾸기
+
+FC와 CONV의 차이점은 단 하나: CONV 레이어의 각 뉴런은 인풋에 부분적인 영역에만 연결되어 있고, CONV 볼륨의 많은 뉴런들이 파라미터를 공유한다는 것이다. 하지만, Fc, Conv 모두 뉴런들은 내적 연산을 하고, **functional form** _내설명:(기능 ???)_ 은 동일하다. 그래서 FC와 CONV 레이어들을 서로 변환할 수 있는게 사실상 가능하다는 것을 발견했다.
+
+- 어떤 CONV 레이어든, 똑같은 forward 연산을 실행하는 FC 레이어를 찾을 수 있다. 가중치 행렬은 큰 사이즈의 행렬일텐데, 부분적인 블록 (로컬하게 연결되어 있으니까)만 빼고 대부분 값이 0일 것이며 블록 내부의 가중치들의 값들은 비슷비슷할 것이다 (파라미터 공유 특성때문에).
+- 반대로 말하자면, 그 어떤 FC 레이어도 CONV 레이어로 바꿀 수 있다. 예를 들어, 인풋 볼륨 사이즈가 7x7x512이고, K=4096 (K는 필터/커널 사이즈)인 FC 레이어가 있다. 얘에 상응하는 CONV레이어를 찾는다면 F=7, P=0, S=1, K=4096일 것이다. 다른 말로 하자면, 필터 사이즈는 인풋 볼륨의 사이즈와 동일해야 하고, 아웃풋은 결국 1x1x4096 일 것이다. 왜냐하면 인풋 볼륨에 맞는 depth 열이 딱 하나밖에 없기 때문이다. (???) 그래서 이렇게 CONV로 바꾼애도 처음의 FC 레이어와 같은 결과를 내뱉는 것이다.
+
+**FC -> CONV conversion**
+
+이 쌍방 변환 중에서, FC레이어를 CONV 레이어로 바꿀 수 있다는 점이 매우 유용하다. ConVNet 구조가 224x224x3 의 이미지를 인풋으로 받는다고 치자. 연속적인 CONV 레이어들, Pool 레이어들을 사용해서 이미지를 7x7x512 의 액티베이션 볼륨 사이즈로 줄였다. (나중에 같이 볼 거긴 한데, AlexNet 구조에서는 이 때 5개의 풀링 레이어들로 인풋을 spatial 하게 매번 1/2씩 downsample해서, 마지막 sptaial size는 224 / 2 /2 /2 /2 /2 = 7 이 나왔다.) 그리고 여기에서, AlexNet은 4096 사이즈인 FC 레이어 2개를 썼고, 마지막 FC 레이어들 _내설명:(last FC layers? 1 or 2? **??? -s는 오타?** )_ 은 1000개의 뉴런들로 클래스 스코어를 계산했다. 우리는 이 3개의 FC 레이어들을 각각 CONV 레이어로 바꿀 수 있다: 아래처럼...
+
+- 7x7x512의 볼륨을 가진 첫번째 FC 레이어를 --> 필터 F=7인 CONV layer로 바꿔서, 1x1x4096 아웃풋 볼륨을 만든다.
+- 두번째 FC 레이어는 F=1인 ConV레이어로 바꿔서 1x1x4096을 만들자.
+- 마지막 FC 레이어도 F=1인 ConV로 바꿔서 최종 아웃풋은 1x1x1000이다.
+
+이 각각의 변환들은 현실적으로 각 FC 레이어에 있는 가중치 행렬 W를 ConV 레이어 필터로 조작해주는 (예를 들어, reshaping) 과정이 필요할 수도 있다. 우리는 이 변환을 이용해서 단 한번의 forward pass를 하면서, ConvNet을 (큰 이미지의) 수많은 spatial 위치들에 대해 효과적으로 슬라이드시킬 수 있다는 게 좋은 발견 포인트이다.
+
+예를 들어, 224x224이미지가 7x7x512의 볼륨 사이즈를 준다(???)고 생각해보자. 32 (224/7) 만큼 줄이고, 이미지 사이즈 384x384 를 바뀐 설계구조에다가 forward 패쓰한다. 이렇게 하면 12*12*512 볼륨 사이즈가 나올 건데, 384/32=12 이기 때문이다. 그 다음 3 개의 CONV 레이어들(우리가 방금 FC에서 ConV로 바꾼 애들)을 죽 따라가보면 마지막 최종 볼륨 사이즈는 6*6*1000 일 것이다. (12-7)/1 + 1 = 6 이니까. 클래스 스코어 값을 가진 단일(싱글) 벡터 91*1*1000 사이즈) 가 아니라, 우리는 최종적으로 384*384 이미지에 대해서 6*6 배열의 클래스 스코어를 가지게 되는 것이다.
+
+> Evaluating the original ConvNet (with FC layers) independently across 224x224 crops of the 384x384 image in strides of 32 pixels gives an identical result to forwarding the converted ConvNet one time.
+
+자연스럽게, 변환한 ConvNet을 forward 한번 하는 건 원래의 CONVNET을 모든 36개 지점에서 반복하는 것보다 훨씬 효율적이다. 왜냐하면 36번의 평가들은 연산을 어차피 공유할테니까 (비슷한 연산을 할꺼란 소리). 이 수법은 현실 예제에서 더 좋은 성능을 얻기 위해 쓰인다. 예를 들어, 이미지를 resize해서 더 크게 만들고, 변환한 CONVNET을 써서 클래스 스코어를 수많은 spatial 지점들에서 평가하고, 그 스코어들을 평균내는 건 흔한 방식이다.
+
+마지막으로, 만약 우리가 효율적으로 오리지널 ConVNET을 이미지에 적용하고 싶은데 stride를 32픽셀보다 작은 걸 주고 싶다면? 우리는 여러번의 forward pass를 해서 이걸 해볼 수 있다. 예를 들어, 우리가 16픽셀의 스트라이드를 쓰고 싶다면, 변환한 CONVNET를 두 번 forwarding해서 받은 볼륨 값들을 합쳐서 그렇게 해볼 수 있다: 첫번째는 원본 이미지에 대해서 forward 연산, 두번째는 spatial 적으로 (폭, 높이에 대해서) 16픽셀만큼 shifted된 이미지에다가 연산한다.
+- [이 파이썬 노트북은 Caffe로 변환 연산을 어떻게 수행했는지 코드로 보여준다.](An IPython Notebook on Net Surgery shows how to perform the conversion in practice, in code (using Caffe))
 
 ## ConvNet Architectures
 
