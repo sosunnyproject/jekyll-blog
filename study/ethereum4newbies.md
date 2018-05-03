@@ -4,17 +4,16 @@ layout: default
 
 ## 이더리움이 뭔가요? 일반인을 위한 블록체인 강좌 
 - 들으면서 필기한 내용
-- 영상 출처: https://www.youtube.com/watch?v=uUC3hELa-Oo
+- 영상 출처: [Studio Decentral의 일반인을 위한 블록체인 강좌 block15](https://www.youtube.com/watch?v=uUC3hELa-Oo)
 - 이더리움 백서를 봅시다: [영어](https://github.com/ethereum/wiki/wiki/White-Paper#ethereum), [한글](https://github.com/ethereum/wiki/wiki/%5BKorean%5D-White-Paper)
-- 비탈릭 뷰테린에 대한 장문 기사 (2016, 영어, Fortune): http://fortune.com/ethereum-blockchain-vitalik-buterin/ 
-  - 내가 Fortune에서 일하던 시절에 유능한 신세대 테크 기자분이 썼던 기사인데, 재밌게 잘 써있음. 영어 읽을 수 있다면 추천.
+- 비탈릭 뷰테린에 대한 장문 기사 [2016, 영어, Fortune](http://fortune.com/ethereum-blockchain-vitalik-buterin)
+  - 내가 Fortune에서 일하던 시절에 유능한 신세대 테크 기자분이 썼던 기사인데, 재밌게 잘 써있음. 영어 읽을 수 있다면 추천.
 
 
 ### 비트코인의 문제점(이자 이더리움이 나오게 된 계기)
 - 튜링 불완정성: 아주 단순한 언어, 중요한 단어만 이야기한다. 
 - Value-blindness: 한 번에 한 트랙잭션만 가능. 100을 보내고 5를 받아야 하니까 95만 받자, 이런게 아니라 따로따로. (이건 비트코인/블록체인 책에 더 잘 나와있는 듯)
 - Lack of state: 상태 저장이 불가능. 계약을 할 때 조건을 걸어서 진행하는 게 힘들다.
-
 - 작업증명방식의 합의 매커니즘: ASIC 채굴장비를 통한 합의 매커니즘은 큰 에너지 소모, 채굴자 중앙화 초래.
 - 이더리움은 비트코인의 스크립트 언어의 한계성을 극복하기 위해 시작되었다고 생각하자.
 
@@ -98,18 +97,18 @@ layout: default
         - 튜링 완전: 코드만 보고는 이 계약이 끝날지 말지, 무한 루프 돌지 말지 모를 수 있음: halting problem
         - 무한 루프 방지 위해, 특정 양의 연산을 했을 때는 gas가 고갈되도록.
           
-**이더리움은 본인들이 인터넷이라고 생각. 자신의 플랫폼 위에 사람들이 여러 DAPP을 올리는 방식**
+**3-1. 이더리움은 본인들이 인터넷이라고 생각. 자신의 플랫폼 위에 사람들이 여러 DAPP을 올리는 방식**
   - DApp은 이더리움 블록체인을 사용하기 위해서 Gas를 계속 사용해야 하는 것
   - 프론트엔드에서 사람들에게 어떻게 수급을 할 것인지.
   - 지불된 gas는 노드들에게 거래 수수료로 지급됨 (노드들의 수익)
     
-**이더리움 개발단계**
+**5. 이더리움 개발단계**
   - 1단계 Frontier : 커맨드라인 인터페이스 CLI
   - 2단계 Homestead: 안전하다 판단. 
   - 3단계 Metropolis: 공식 인터페이스, DApp 스토어 출시
   - 4단계 Serenity: 확장성, 자산증명 개선. 성능 향상. 
 
-**DApp 플랫폼의 앱들**
+**6. DApp 플랫폼의 앱들**
  - augur, Gnosis: 스마트 컨트랙트. 오라클이 중요. 예측 시장 조건을 사용하는 애들
  - Melonport: 금융 특화, 헤지펀드 - 전략을 블록체인에다가 기록함. 전략에 대한 수익구조, 조건을 다 볼 수 있음. 자산관리의 투명   
  - Iconomi: Melonport랑 비슷한데 ICO에 집중
