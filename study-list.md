@@ -13,3 +13,5 @@ layout: default
 [리액트 기초 스터디](./study/react.md)
 
 [블록체인-이더리움 기초 강의](./study/ethereum4newbies.md)
+
+[건전한 ICO 생태계를 위한 세미나 2018.05.03](./study/icoseminar050218.md)
