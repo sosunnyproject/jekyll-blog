@@ -65,6 +65,7 @@ layout: default
     - 일반적으로 생각하는 내 계좌.
     - public address 이고, 공개 키 기반의 암호화를 사용 (?)
     - private key 개인키를 가지고 통제할 수 있다. 
+    
   
   - **계약 계좌 Contract Account**
     
@@ -77,6 +78,14 @@ layout: default
     - 내부 저장공간에 정보를 읽고, 쓸수 있다. 
       - 개발 관점: OOP에서 class 개념
       - class에 있는 정보들을 밖에서 접근을 했을 때, 내부 절차들을 통해서 class 속성을 업데이트 시켜주듯이 계좌의 속성을 업데이트 시킨다고 생각하기.
+  
+```
+- Externally Owned Account: code activation (x), value transfer (o)
+- 모든 transaction은 EOA --> EOA, EOA --> Contract Account로
+  - 시작은 무조건 EOA 맞을거임.
+- 계정과 계정 간의 거래 : 외부적으로 보면 그냥 계정
+- 계약의 경우: 컨트랙 짜서 올리면 컨트랙 어드레스가 나옴
+```
   
   - **계좌 구조**
     - 난스/논스 nonce
