@@ -4,6 +4,10 @@ layout: default
 
 # List of Contents
 
+[Go 언어 기초1-함수](./study/goFunction.md)
+[Go 언어 기초2-컬렉션](./study/goCollection.md)
+[Go 언어 기초3 - 기타](./study/goEtc.md)
+
 [cs231n 모듈2 CNN 설명 번역](./study/cs231n-module2-translation.md)
 
 [DLC 숙제1,2 과정](./study/dlc-hw1and2-process.md)

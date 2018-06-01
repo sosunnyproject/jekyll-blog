@@ -145,4 +145,63 @@ INFO [05-18|16:58:54] Commit new mining work                   number=3 txs=0 un
 INFO [05-18|16:58:54] Successfully sealed new block            number=3 hash=ba1c43…0cbdab
 INFO [05-18|16:58:54] 🔨 mined potential block                  number=3 hash=ba1c43…0cbdab
 ```
+  
+## 트랜잭션
 
+- **insufficient funds for gas * price + value** 에러
+  - [비슷한 에러 이슈](https://github.com/ethereum/go-ethereum/issues/15983) 따라했는데도 안 됨..
+    - 여기 이슈에서는 networkid를 11로 고치고 나니까 문제가 사라졌다고 함.
+    - 나는 계속 에러 발생...
+```bash
+> eth.sendTransaction({from:eth.accounts[0], to:eth.accounts[1], value: web3.toWei("0.1", "ether")})
+Error: insufficient funds for gas * price + value
+    at web3.js:3143:20
+    at web3.js:6347:15
+    at web3.js:5081:36
+    at <anonymous>:1:1
+```
+
+# Smart Contract
+
+## Solidity - EVM on Windows 10
+
+- 다른 거 보지 말고 이것만 봐도 됨: http://solidity.readthedocs.io/en/v0.4.24/installing-solidity.html
+    - CMake (PATH 설정 해주기), Git Bash, Visual Studio 2017 Build Tools 다운받기
+    - Git clone
+- git clone 이후에 **External Dependencies** 커맨드 부분에서 에러남
+    - **문제**: Windows `C:...\solidity > scripts\install_deps.bat` 쳤는데 Cmake 못 찾는다고 난리. 내가 분명 PATH 확인까지 다 했는데..!
+    - **해결**: Git Bash 로 들어가서 `C:.../solidity $ ./scripts/install_deps.bat` 치니까 잘 됨!!! 
+```bash
+...
+-- [download 96% complete]
+-- [download 97% complete]
+-- [download 98% complete]
+-- [download 99% complete]
+-- [download 100% complete]
+Unpacking boost-1.61.tar.gz to C:/Program Files/solidity/deps/install
+
+```
+
+- `cmake -G "Visual Studio 15 2017 Win64" ..`
+error
+```bash
+No SMT solver found (Z3 or CVC4). Optional SMT checking will not be available. Please install Z3 or CVC4 if it is desired.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Program Files/solidity/build
+```
+- alternative: `cmake --build . --config RelWithDebInfo`
+
+- 왜안댐 ㅠㅠㅠ
+
+- https://www.codeooze.com/blockchain/solc-hello-world/
+
+## Browser-Solidity
+- 에러: Syntax Error: JSON ' at line 1
+  - 이거는 Create 버튼 입력창에다가 "hello" 이렇게 " " 더블쿼트로 단어를 넣어주지 않아서 생기는 에러
+- 에러: password or unlocked 비밀번호로 풀어야 하는 에러 
+  - 윈도우 커맨드 창에서 `geth --networkid 4649 --nodiscover --maxpeers 0 --datadir "C:\data_testnet" --rpc --rpcaddr "0.0.0.0" --rpcport 8545 --rpccorsdomain "*" console 2>> "C:\data_testnet\geth.log"` 이렇게 넣어서 8545 연결도 시켜주고 geth console 띄우도록 했음
+  - `> personal.unlockAccount(eth.accounts[0], "pass0" 0)` 이런 식으로 다 언락 해줌
+  - Remix 에서 console 창에다가 `> web3.eth.personal.unlockAccount(~어카운트~비밀번호~0 넣기~)` 하면 될수도 있음 (이라고 봤지만 안됨)
+  - 예제 코드에서 61쪽에서 --unlock 0 --password "C:\data_testnet\passwd" 이런식으로 password 담긴 파일을 불러와서 언락할 수 있다고 하는데, 이게 deprecated 된 기능 (위험 요소때문에)
+  - 그래서 이제는 --unlock 0 만 치면 콘솔처럼 password 치라고 나옴. 이때 빨리 패스워드 쳐주면 됨
