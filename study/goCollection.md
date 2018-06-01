@@ -45,6 +45,7 @@ func main() {
     fmt.Println(a)     // [1, 10, 3]출력
 }
 ```
+
 - **Package fmt implements formatted I/O with functions analogous to C's printf and scanf.**
 
 ### slice : make()
@@ -69,10 +70,12 @@ func main() {
     // [0 1 2 3 4]
 }
 ```
+
 ### slice : sub-slice
 - python과 비슷
 - 처음인덱스:마지막인덱스 like [a:b]
 - 처음인덱스(a)는 포함, 마지막인덱스(b)는 제외
+
 ```Go
 package main
 import "fmt"
@@ -87,6 +90,7 @@ func main() {
   // [2 3]
 }
 ```
+
 ### slice: 추가, append(병합), copy(복사)
 
 - append()할 때, capacity 를 초과하는 경우
@@ -96,6 +100,7 @@ func main() {
     - 예를 들어, len=3 cap=3 인 상황에서 1개를 append하면 len=4 가 되고 싶어할 것
       - cap()은 이 len의 2배만큼 늘어난다.
       - 즉 (len 3, cap 3)에 append 하나를 더 하면 (len 4, cap 8)이 된다.
+      
 ```Go
 package main
 import "fmt"
@@ -119,6 +124,7 @@ func main() {
 
 - 두개의 슬라이스를 합칠 때
   - `sliceB...` syntax에 유념할 것
+
 ```Go
 package main
  
@@ -134,6 +140,7 @@ func main() {
     fmt.Println(sliceA) // [1 2 3 4 5 6] 출력
 }
 ```
+
 - copy() 사용해서 한 슬라이스를 다른 슬라이스로 복사
 - _슬라이스는 실제 배열을 가리키는 포인터 정보만을 가진다._ 
 - **즉, 소스 슬라이스가 갖는 배열의 데이타를 타겟 슬라이스가 갖는 배열로 복제하는 것임)**
@@ -158,6 +165,7 @@ func main() {
 var idMap map[int]string
 idMap = make(map[int]string)
 ```
+
 ## Go 패키지
 
 - 코드의 모듈화, 코드의 재사용 기능 제공
