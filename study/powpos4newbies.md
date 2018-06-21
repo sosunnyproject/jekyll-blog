@@ -1,6 +1,9 @@
-> Studio Decentral 유튜버의 PoW, PoS 합의 메커니즘 1부 [유튜브 동영상](https://www.youtube.com/watch?v=MGXRy7CQAPE) 감상하며  정리
+> Studio Decentral 유튜버의 PoW, PoS 합의 메커니즘 1,2부 [유튜브 동영상 1부](https://www.youtube.com/watch?v=MGXRy7CQAPE), [2부](https://www.youtube.com/watch?v=3yYn9AbdXiY) 감상하며  정리
 
-# 합의 메커니즘
+
+# 1부
+
+## 합의 메커니즘
 **알아갈 용어들**
 - Proof of Work
 - Proof of Stake
@@ -97,8 +100,42 @@ centralized | permission-less, distributed
 - 여기서 '노드' - validator 의미로 말한거였음.
 
 
-  
-  
+# 2부
+
+youtube- pow pos block 12 studio decentral
+### PoW, PoS
+- PoS: Proof of Stake: 자산을 많이 가진 사람에게 분산화된 비허가성 데이터 베이스인 블록체인을 업데이트하기 위한 권한을 부여하는 합의 매커니즘이다. 자산 증명. (작업증명은 PoW)
+- consensus by bet: 자산이 가장 큰 블록체인을 가장 정당한 valid한 블체로 하기로 함 consensus, 베팅을 가장 많이 받은 블록을 인정해준다.
+- validator들의 자산 증명 리스트: A 자산 xx, B 자산 xx, 이 블록을 정당하다고 인정하는 사람들의 리스트가 있음.
+그 validator들의 자산이 가장 큰 블록이 정당한 블록체인으로 인정됨.
+- 작업증명- 일이 가장 많이 들어간 체인을 인정해줌
+- tendermint:도 동일한 개념.
+- 왜 stake 위주야??
+  - 이 시스템에 stake가 많은 사람들
+  - 내가 지분이 많을 수록 이 화폐의 가치가 떨어지는게 싫잖아. 
+  - 화폐의 생태계에 도움이 되는 방향으로 가고 싶을 테니까.
+
+
+- PoW : 전세계 채굴 연산량 51% 이상 보유
+- PoS : 전세계 자산의 51% 이상 보유 
+- PoS의 51% 금액 > PoW 51%
+- 사회적인 문제.. 어떻게 자신의 자산, 권력을 활용/횡포할까
+- 아담 백- 해쉬 캐쉬 때 이미 PoW가 있었다 - 이걸 블록체인과 합치니까 와우
+- PoS 시스템마다 그냥 보유만 해도 되거나 노드 역할에 참여하거나 규약이 다름
+
+- PoS: virtualize 채굴 이라고 생각.
+- 채굴자가 반대한다고 해도 비탈릭 PoS testnet에서 돌려보고 하겠다고 하면 걍 하는 거임.
+- PoS 문제점: virtualize 환경이기 때문에 내 자산을 나눠서 두개로 해서 proof 계속 찍어낼수도 있다는 사기 리스크
+- (단기공격) 이중지불공격 가능: 적은 비용으로도 공격이 가능. validator 입장에서는 뭐가 인증될지 모르고, 어느 경우에나 보상을 받을테니까 그냥 둘 다에다가 베팅. 혼란, 남발 리스크
+- PoS 검증 과정: 컴퓨팅 파워는 거의 안든다고 보면 됨. 그냥 싸인하는거임
+- PoS 벌금: 이더는 그냥 버닝, tendermint는 클레이머에게 돌아감.
+
+
+CASPER
+- nothing at stake: 검증자가 잘못된 선택을 하더라도 잃을 것이 없다. 그래서 이더리움의 PoS 알고리즘(Casper)에서는 보증금 security deposit, penalty 통해 해결하려고 하고 있다. 검증자가 되기 위해서 보증금을 넣어놓고 벌금 물릴 수 있음.
+- 자산 증명, validator 되기 위해서는..
+  - bonding: 예치: bonded validator가 되어야 한다. (30:22)
+
   
   
   
