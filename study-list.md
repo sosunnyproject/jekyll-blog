@@ -18,4 +18,4 @@ layout: default
 
 [블록체인-이더리움 기초 강의](./study/ethereum4newbies.md)
 
-[건전한 ICO 생태계를 위한 세미나 2018.05.03](./study/icoseminar050218.md)
+[하이퍼레져 - 설계구조 - Peer 피어 설명 요약/번역](./study/hyperledger-peer.md)
