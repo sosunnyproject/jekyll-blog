@@ -186,3 +186,16 @@ oReq.send();
 
 - 
 
+
+## API
+- 페이스북 로그인 / 네이버 로그인 이런 설정들을 본 웹사이트 외부에서 진행 하는 경우, API를 써서 연동될 수 있게 한다. 
+
+### 그래서 REST API 가 뭐야?
+[그런 rest api로 괜찮은가](https://www.youtube.com/watch?time_continue=208&v=RP_f5dMoHFc)
+- 로이 필딩: HTTP 통신에 대한 고민: how do i improve http without breaking internet
+  - HTTP Object Model --> 후에 REST 라는 이름으로 발표
+  - REpresentational State Transfer: "Architectural Styles and the Design of Network-based Software Architectures"
+
+- API
+  - REST API : Flickr 에서 API 최초 공개
+  - 
