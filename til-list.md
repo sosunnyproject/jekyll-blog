@@ -35,6 +35,6 @@ layout: default
 
 [Go 언어 기초3 - 기타](./today-i-learned/goEtc.md)
 
-[Cosmos 체인 유튜브 인터뷰 요약](./today-i-learned/cosmostintvw.md)
+[Cosmos 체인 유튜브 인터뷰 요약](./today-i-learned/cosmosintvw.md)
 
 [KPMG 블록체인 보고서 번역](./today-i-learned/kpmg.md)
