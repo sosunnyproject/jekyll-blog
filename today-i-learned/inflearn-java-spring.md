@@ -46,8 +46,8 @@ pom.xml : 스프링의 각 기능-모듈들 - core/jdbc/aop 등을 가져오기 
 - 스프링 프레임워크: 메인 리포에서 스프링 모듈들을 사용 - pom.xml 
 
 리소스 폴더 > applicationContext.xml
-스프링은 컨테이너IoC 큰걸 만들고 그안에 객체를 다 생성하고, 거기서 필요한 걸 빼와서 사용하는 방식. 그 객체를 만들어주는게 applicationContext.xml 
-bean 태그
+스프링은 컨테이너IoC 큰걸 만들고 그안에 객체를 다 생성하고, 거기서 필요한 걸 빼와서 사용하는 방식. 그 객체를 만들어주는게 applicationContext.xml (스프링 컨테이너 생성)
+bean 태그 (객체 생성)
 
 resources > new : xml file, applicationContext.xml
 beans 
@@ -230,4 +230,85 @@ set메소드 이름에서 set은 빼고 name,
 ```
 
 
+## 스프링설정파일분리
 
+> 스프링설정파일을 분리하자
+> 빈의 범위를 알아보자
+
+applicationContext.xml : 설정파일
+- appCtx1.xml: Dao 와 서비스객체
+- appCtx2.xml : 데이터베이스 커넥션 관련
+- appCtx3.xml : 앱 인포메이션 관련
+
+이렇게 분리해보았다.
+
+**여러 파일을 어떻게 불러오지?**
+
+1. 스트링 배열
+```java
+String[] appCtxs ={"classpath:appCtx1.xml", "classpath:appCtx2.xml", "classpath:appCtx3.xml"}
+
+GenericXmlApplicationContext ctx = new GenericXmlApplicationContext(appCtxs);
+```
+빈 객체를 다 메모리에 로드
+
+2. 쪼갠것 중의 하나에다가 나머지를 import 시켜놓고 걔를 자바 파일에서 부르기
+```xml
+<!--appCtximport.xml-->
+<import resource="classpath:appCtx2.xml">
+<import resource="classpath:appCtx3.xml">
+<!--Dao 내용들~~ -->
+
+```
+```java
+//자바 파일
+//import 할때 appCtximport.xml 만 해주면 됨
+String appCtx = "classpath:appCtximport.xml";
+```
+
+**빈의 범위**
+- Singleton: 싱글튼
+  - getBean() 메소드로 호출될 때는 객체를 참조하는 것.
+  - Spring Container에 객체를 생성해 놓는데, 동일한 객체는 1번만 생성된다.
+  - (같은 객체들이 여러개 있는게 아니다)
+
+- Prototype: 프로토타입
+  - bean 생성할 때 `scope="prototype"`이라고 설정한다.
+  - getBean() 메소드로 호출할 때마다 (똑같은 내용의) 다른 객체가 생성이 되서 받는다.  
+
+## 의존객체 자동 주입
+> constructor-org/property 이런 의존 설정 따로 수동으로 안하고 자동 주입하는 방법. 
+
+> Autowired, Resource annotation
+
+**자동주입 @Autowired**
+- 주입하려고 하는 객체의 타입이 일치하는 객체를 자동으로 주입한다. 
+- xml 코드가 간단해짐. 
+- 디폴트 생성자 하나 미리 만들어야 함.
+
+```xml
+<context:annotation-config /> <!--이거 써줘야됨-->
+<bean id="wrodDao" class="com.word.dao.WordDao" />
+<bean id="registerService" class="com.word.service.WordRegisterService" />
+```
+
+```java
+public class WrodRegisterService {
+    
+    // @Autowired  
+    private WordDao wordDao;
+
+    public WordRegisterService(){
+        //위에 WordDao에 Autowired 할거면 기본 생성자 필요. 
+        // 이것도 없으면 autowired가 끌어올 wordDao 생성자체가 안되어 있어서.
+    }
+    @Autowired
+    public WordRegisterService(WordDao wordDao) {
+        this.wordDao = wordDao;
+    }
+}
+```
+
+**자동주입 @Resource**
+- 객체의 타입을 보는게 아니라 객체 이름을 보고 주입해준다.
+- wordDao 랑 동일한 이름 `<bean id="wordDao"... />` 인 애를 찾는다.
