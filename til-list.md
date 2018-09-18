@@ -11,6 +11,8 @@ layout: default
 
 [edwith 풀스택 강의](./today-i-learned/edwith-fullstack.md)
 
+[네트워크란?](./today-i-learned/network.md)
+
 ## 딥러닝
 [cs231n 모듈2 CNN 설명 번역](./today-i-learned/cs231n-module2-translation.md)
 
@@ -27,7 +29,7 @@ layout: default
 
 [하이퍼레져 - 설계구조 - Peer 피어 설명 요약/번역](./today-i-learned/hyperledger-peer.md)
 
-[하이퍼레져 - 기타](./today-i-learned/hyperledgerall.md)
+[하이퍼레져 - 설치 terminal](./today-i-learned/hyperledger4all.md)
 
 [Go 언어 기초1-함수](./today-i-learned/goFunction.md)
 

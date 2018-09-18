@@ -1,7 +1,4 @@
-```bash
-login as: ethadmin
-ethadmin@192.168.193.111's password:
-─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+```bash sh
 
 Session stopped
     - Press <return> to exit tab
@@ -10,7 +7,7 @@ Session stopped
 
 Server unexpectedly closed network connection
 login as: ethadmin
-ethadmin@192.168.193.111's password:
+ethadmin@192.168.193.111s password:
      ┌────────────────────────────────────────────────────────────────────┐
      │                        • MobaXterm 10.6 •                          │
      │            (SSH client, X-server and networking tools)             │
@@ -35,12 +32,7 @@ Welcome to Ubuntu 16.04.4 LTS (GNU/Linux 4.4.0-116-generic x86_64)
 
 
 *** System restart required ***
-Last login: Fri Jun 22 14:02:27 2018 from 192.168.243.189
-ethadmin@ethereum-cluster-1:~$ su root
-Password:
-su: Authentication failure
-ethadmin@ethereum-cluster-1:~$ su root
-Password:
+
 root@ethereum-cluster-1:/home/ethadmin# ls
 andus.json  bin  nodeInfo.txt  nohup.out  start1.sh
 root@ethereum-cluster-1:/home/ethadmin# cd ..
@@ -68,7 +60,7 @@ Pulling hyperledger/fabric-peer:amd64-1.2.0-stable
 Error response from daemon: manifest for hyperledger/fabric-peer:amd64-1.2.0-stable not found
 root@ethereum-cluster-1:/data/hyperledger/fabric-samples/bin# docker-compose --verbose pull
 ERROR: compose.cli.main.main:
-        Can't find a suitable configuration file in this directory or any
+        Cant find a suitable configuration file in this directory or any
         parent. Are you in the right directory?
 
         Supported filenames: docker-compose.yml, docker-compose.yaml
@@ -77,7 +69,7 @@ root@ethereum-cluster-1:/data/hyperledger/fabric-samples/bin# cd ../../../
 root@ethereum-cluster-1:/data# cd hyperledger/
 root@ethereum-cluster-1:/data/hyperledger# docker-compose --verbose pull
 ERROR: compose.cli.main.main:
-        Can't find a suitable configuration file in this directory or any
+        Cant find a suitable configuration file in this directory or any
         parent. Are you in the right directory?
 
         Supported filenames: docker-compose.yml, docker-compose.yaml
