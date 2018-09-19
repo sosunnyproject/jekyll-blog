@@ -29,6 +29,8 @@ layout: default
 
 [하이퍼레져 - 설계구조 - Peer 피어 설명 요약/번역](./today-i-learned/hyperledger-peer.md)
 
+[하이퍼레져 유튜브 튜토리얼 정리 (작성중)](./today-i-learned/hyperledgerYTtutorial.md)
+
 [하이퍼레져 - 설치 terminal](./today-i-learned/hyperledger4all.md)
 
 [Go 언어 기초1-함수](./today-i-learned/goFunction.md)

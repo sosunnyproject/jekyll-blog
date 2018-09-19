@@ -7,7 +7,7 @@
 
 **상황 예시**
 1. 내 컴퓨터에서 google.com 이라고 브라우저에 검색한다.
-0. (검색을 하는 순간 내 컴퓨터는 DNS에 ~조용히~ 접속해서 google.com의 ip address를 물어본다. DNS는 DB에서 정보를 가져와 google.com의 ip address를 반환해줌.)
+0. (검색을 하는 순간 내 컴퓨터는 DNS에 ~~조용히~~ 접속해서 google.com의 ip address를 물어본다. DNS는 DB에서 정보를 가져와 google.com의 ip address를 반환해줌.)
 2. google.com (실제로는 google.com에 해당하는 ip address)에 해당되는 컴퓨터로 REQUEST 요청이 전송된다. 
 3. google.com이 내 컴퓨터로 RESPONSE 응답 신호를 전송한다. 
 4. 그 신호가 내 컴퓨터 화면에 표시된다.
@@ -21,7 +21,7 @@
 - domain name: 서버 주소 이름. ex) google.com
 - IP (internet protocol) address: 서버에 접속하는 다른 이름. ex) $ ping google.com 하면 google.com의 ip 주소 알 수 있음: 172.21.25.78
 - DNS (Domain Name Server): 모든 도메인 이름이 각각 어떤 ip address 인지 알고 있는 서버. 거대한 전화번호부와 같음.
-- public address: 통신사 기기 ~~회선~~ Router 에 있는 Router IP
+- public address: 통신사 기기 --- ~~회선~~ --- Router 에 있는 Router IP
   - `curl` 결과 = Router의 주소
 - private address: 하나의 Router IP address에서 여러 기기로 나눠지는 사설 ip
   - `ip addr` 결과 = 이 컴퓨터에 어떤 ip가 붙어있는가 = private IP
@@ -65,6 +65,7 @@
 
 ## IT 동아 연재글
 IT동아에서 컴퓨터 네트워크 기초 내용을 짧게 올린것도 있어서 첨부! 
+
 [1부 - IP Address](http://it.donga.com/openstudy/3106/)
 
 [2부 - Gateway / DNS](http://it.donga.com/openstudy/3126/)
