@@ -1,15 +1,15 @@
 ## Vanilla JS Day 4
 
-## if/else 사용하는 code challenge
+### if/else 사용하는 code challenge
 
 - [window속성](https://developer.mozilla.org/en-US/docs/Web/API/Window)
 - querySelector: #id, .class, normalTag 헷갈리지 말기
 - document.bgColor 기본제공 API로 색깔 변경 가능
 - resize 할 때마다 변경되게 하려면, function handler 붙여서 그 function 안에서 기능 구현
-- [sandbox code submit](https://codesandbox.io/s/empty-blueprint-9yfn0)
+- [my sandbox code solution](https://codesandbox.io/s/empty-blueprint-9yfn0)
 
 ```js
-const colors = ["#CD61FF", "#E87C61", "#FFDF78", "#82E861", "#6BF5FF"];
+const colors = ["#CD61FF", "#E87C61", "#FFDF78", "#82E861", "#6BF5FF"]; // adobe colors 에서 팔레트 가져옴.
 let sizeText = document.querySelector("#sizeInfo");
 document.bgColor = colors[0];
 
