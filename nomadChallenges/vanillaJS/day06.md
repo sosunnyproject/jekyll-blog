@@ -67,13 +67,15 @@ function saveLocation() {
   // check which option is selected
   for (let i = 0; i < options.length; i++) {
     if (options[i].selected) {
-      country = options[i].value;
-      h2.innerText = `You selected ${options[i].text}`;
+      if (options[i].value === "") {   // choose your country 선택시
+        localStorage.setItem(COUNTRY, null);
+      } else {                         // 그 외 선택시
+        country = options[i].value;
+        h2.innerText = `You selected ${options[i].text}`;
+        localStorage.setItem(COUNTRY, country);
+      }
     }
   }
-
-  // save in localStorage
-  localStorage.setItem(COUNTRY, country);
 }
 
 function loadLocation() {
