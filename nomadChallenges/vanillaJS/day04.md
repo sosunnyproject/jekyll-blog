@@ -1,6 +1,6 @@
-## Vanilla JS Day 4
+## 2.5 ~ 2.7 강의
 
-### if/else 사용하는 code challenge
+### Use if/else to Change Canvas Color
 
 - [window속성](https://developer.mozilla.org/en-US/docs/Web/API/Window)
 - querySelector: #id, .class, normalTag 헷갈리지 말기

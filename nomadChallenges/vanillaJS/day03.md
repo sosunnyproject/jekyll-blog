@@ -1,6 +1,6 @@
 ## 2.1 ~ 2.4 강의
 
-## 코드 챌린지
+### Change Text by Mouse Actions
 
 - addEventListener
 - const superEventHandler 안에 function handlers 다 집어넣기
