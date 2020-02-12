@@ -54,4 +54,35 @@
 - https://media.consensys.net/trusets-greg-taschuk-on-web3-game-theory-and-bootstrapping-networks-73525057ab7d
 
 
+### 인터블록체인
+- 인터체인: 인터넷의 블록체인 버전. 서로 다른 블록체인들을 연결하는 블록체인 네트워크
+    - 여러 기업이 다른 체인/토큰을 쓰고 있어도 트레이딩 및 연동 가능케 하는 크로스브릿지 기술
+- 크로스브릿지 기술: 다른 체인들끼리 토큰화된 자산을 트레이딩
+- 이더리움 + 하이퍼레져
+    - 이더리움: PoW 합의, 장부, 프라이벳 퍼미션 반드시 필요, 노드에 기능별로 역할 지정 가능
+    - Hyperledger: consensus – transaction level, 프라이벳 퍼미션 반드시 필요, 노드에 기능별로 역할 지정 가능
+- HyperLedger Burrow: Permissioned 이더리움 스마트 계약 블록체인 노드. Tendermint 합의 엔진 결합. 멀티 체인 가능성 지향.
+- HyperLedger Sawtooth 플랫폼을 위한 Ethereum: Seth 프로젝트 리뷰
+- InterChain Foundation의 프로젝트: Cosmos
+    -   InterChain은 서로 다른 체인, 토큰 간의 상호 운용성을 위함
+    -   IBC 프로토콜 및 AION, ICON, COSMOS 등 현시점의 인터체인 기술 분석
+        - IBC: Inter-blockchain Communication 프로토콜은 가상의 UDP, TCP 역할을 한다고 볼 수 있다. 
+
+- Reference
+    - https://medium.com/@matthewminseokkim/comparison-analysis-for-interchain-bd59a8c582e1
+    - https://medium.com/@matthewminseokkim/%EC%9D%B8%ED%84%B0%EC%B2%B4%EC%9D%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B9%84%EA%B5%90-2f1251163c1e
+    - https://medium.com/balance-io/what-is-the-interchain-799b187735de
+    - https://blog.cosmos.network/the-internet-of-blockchains-how-cosmos-does-interoperability-starting-with-the-ethereum-peg-zone-8744d4d2bc3f
+    - https://medium.com/@philippsandner/comparison-of-ethereum-hyperledger-fabric-and-corda-21c1bb9442f6 
+    - http://explore-ip.com/2017_Comparison-of-Ethereum-Hyperledger-Corda.pdf 
+    - https://www.altoros.com/blog/hyperledger-incubation-burrow-integrates-permissioned-ethereum-virtual-machine/
+    - https://www.hyperledger.org/blog/2017/08/22/hello-world-meet-seth-sawtooth-ethereum
+    - https://github.com/hyperledger/sawtooth-seth
+    - https://www.altoros.com/blog/ethereum-blockchain-technology-enters-hyperledger-picture/
+    - https://blog.cosmos.network/etgate-md-6a31f049a62f
+    - https://www.coindesk.com/vitalik-buterin-addresses-hyperledger-possible-ethereum-integration/
+    - https://brunch.co.kr/@helloiconworld/57
+
+
+
 
