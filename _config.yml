@@ -83,7 +83,7 @@ plugins:
 defaults:
   # Posts defaults
   - scope:
-      path: "_devposts"
+      path: "_devPosts"
       type: posts
     values:
       layout: post
