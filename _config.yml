@@ -17,7 +17,7 @@
 remote_theme: "mmistakes/so-simple-theme@3.2.0" 
 skin: "/assets/css/skins/default.css"
 locale: en-US
-title: "My Awesome Site"
+# title: "My Awesome Site"
 description: "welcome to sosunnyproject"
 baseurl: "/" # the subpath of your site, e.g. "/blog"
 url: "https://sosunnyproject.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -83,10 +83,26 @@ plugins:
 defaults:
   # Posts defaults
   - scope:
-      path: "_posts"
+      path: "_devposts"
       type: posts
     values:
       layout: post
+      share: true
+    # CreativeCoding defaults
+  - scope:
+      path: "_creativeCodingPosts"
+      type: recipes
+    values:
+      layout: post
+      comments: true
+      share: true
+  # Finance defaults
+  - scope:
+      path: "_financePosts"
+      type: recipes
+    values:
+      layout: post
+      comments: true
       share: true
 
 # Site Author

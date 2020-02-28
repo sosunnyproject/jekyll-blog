@@ -1,7 +1,12 @@
 ---
-layout: default
+title: "Linux"
+categories:
+  - dev
+tags:
+  - dev
+  - OS
+last_modified_at: 2017-03-09T13:01:27-05:00
 ---
-
 
 ## linux 부팅
 

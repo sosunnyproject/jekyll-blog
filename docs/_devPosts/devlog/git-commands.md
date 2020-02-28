@@ -1,5 +1,11 @@
 ---
-layout: default
+title: "Git Commands"
+categories:
+  - dev
+tags:
+  - dev
+  - firebase
+last_modified_at: 2017-03-09T13:01:27-05:00
 ---
 
 ## github README.md markdown

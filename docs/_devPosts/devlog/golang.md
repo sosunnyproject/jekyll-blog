@@ -1,3 +1,13 @@
+---
+title: "GoLang Study"
+categories:
+  - dev
+tags:
+  - dev
+  - golang
+last_modified_at: 2017-03-09T13:01:27-05:00
+---
+
 C:\Go\bin에서 test.go 메모장으로 만들어서 돌리는 데 계속 에러낭
 - `can't load package: package main: read C:\Go\bin\test.go: unexpected NUL in input`
 - test.go 메모장으로 만든걸 vscode로 열려했더니 이진수 어쩌고 하면서 안열림

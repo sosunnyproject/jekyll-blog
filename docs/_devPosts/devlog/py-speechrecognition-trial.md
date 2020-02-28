@@ -1,5 +1,13 @@
 ---
-layout: default
+title: "PySpeech Recognition"
+categories:
+  - dev
+tags:
+  - dev
+  - python
+  - machine learning
+  - speech recognition
+last_modified_at: 2017-03-09T13:01:27-05:00
 ---
 
 ## wit ai ref/study links

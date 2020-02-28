@@ -1,3 +1,14 @@
+---
+title: "SpringBoot Beginner"
+categories:
+  - dev
+tags:
+  - dev
+  - spring
+  - java
+last_modified_at: 2017-03-09T13:01:27-05:00
+---
+
 ## Spring Boot 시작하기
 
 1. https://spring.io/guides/gs/spring-boot/#scratch 따라하기.
