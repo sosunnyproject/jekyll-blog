@@ -4,7 +4,7 @@ limit: 10
 show_excerpts: true
 entries_layout: list
 ---
-## Welcome to My Today-I-Learned 
+## 글또 다짐글 2020
 
 그날 그날 배운 것을 기록하는 Today-I-Learned 깃헙을 블로그 형태로 기록합니다.
 
