@@ -126,6 +126,9 @@ footer_links:
   - title: GitHub
     url: https://github.com/sosunnyproject
     icon: fab fa-github-square
+  - title: LinkedIn
+    url: https://linkedin.com/in/sosunpark
+    icon: fab fa-linkedin-square
   # - title: Feed
   #   url: atom.xml
   #   icon: fas fa-rss-square
