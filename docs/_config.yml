@@ -1,124 +1,124 @@
-remote_theme: "mmistakes/so-simple-theme@3.2.0" 
+# remote_theme: "mmistakes/so-simple-theme@3.2.0" 
 
-locale: en-US
-title: "SOSUNNYPROJECT"
-description: "sosun's blog 2020"
-baseurl: "/so-simple-theme"
-url: "https://sosunnyproject.github.io"
-logo: "/images/sosunny_logo.png"
-date_format: "%B %-d, %Y"
-read_time: true
-words_per_minute: # 200
-mathjax:
-  enable: true
-  combo: "tex-svg"
-  tags: "ams"
-google_fonts:
-  - name: "Source Sans Pro"
-    weights: "400,400i,700,700i"
-  - name: "Lora"
-    weights: "400,400i,700,700i"
-# google_analytics: "UA-2011187-2"
-# disqus:
-#   shortname: "sosimpletheme"
-# twitter:
-#   username: "mmistakes"
-# google_site_verification: "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y"
+# locale: en-US
+# title: "SOSUNNYPROJECT"
+# description: "sosun's blog 2020"
+# baseurl: "/so-simple-theme"
+# url: "https://sosunnyproject.github.io"
+# logo: "/images/sosunny_logo.png"
+# date_format: "%B %-d, %Y"
+# read_time: true
+# words_per_minute: # 200
+# mathjax:
+#   enable: true
+#   combo: "tex-svg"
+#   tags: "ams"
+# google_fonts:
+#   - name: "Source Sans Pro"
+#     weights: "400,400i,700,700i"
+#   - name: "Lora"
+#     weights: "400,400i,700,700i"
+# # google_analytics: "UA-2011187-2"
+# # disqus:
+# #   shortname: "sosimpletheme"
+# # twitter:
+# #   username: "mmistakes"
+# # google_site_verification: "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y"
 
-# Liquid
-liquid:
-  error_mode: strict
+# # Liquid
+# liquid:
+#   error_mode: strict
 
-# Build settings
-permalink: /:categories/:title/
-markdown: kramdown
-feed:
-  path: atom.xml
+# # Build settings
+# permalink: /:categories/:title/
+# markdown: kramdown
+# feed:
+#   path: atom.xml
 
-# Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 10
-paginate_path: /page:num/
+# # Pagination - https://jekyllrb.com/docs/pagination/
+# paginate: 10
+# paginate_path: /page:num/
 
-# Search
-search_full_content: false
+# # Search
+# search_full_content: false
 
-# Taxonomy pages
-category_archive_path: "/categories/#"
-tag_archive_path: "/tags/#"
+# # Taxonomy pages
+# category_archive_path: "/categories/#"
+# tag_archive_path: "/tags/#"
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# # Exclude from processing.
+# # The following items will not be processed, by default. Create a custom list
+# # to override the default setting.
+# # exclude:
+# #   - Gemfile
+# #   - Gemfile.lock
+# #   - node_modules
+# #   - vendor/bundle/
+# #   - vendor/cache/
+# #   - vendor/gems/
+# #   - vendor/ruby/
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-redirect-from
+# plugins:
+#   - jekyll-seo-tag
+#   - jekyll-sitemap
+#   - jekyll-feed
+#   - jekyll-paginate
+#   - jekyll-redirect-from
 
-# Collections
-collections:
-  recipes:
-    output: true
-    permalink: /:collection/:path/
+# # Collections
+# collections:
+#   recipes:
+#     output: true
+#     permalink: /:collection/:path/
 
-# Front Matter Defaults
-defaults:
-  # Post defaults
-  - scope:
-      path: "_devPosts"
-      type: posts
-    values:
-      layout: post
-      comments: true
-      share: true
-  # CreativeCoding defaults
-  # - scope:
-  #     path: "_creativeCodingPosts"
-  #     type: recipes
-  #   values:
-  #     layout: post
-  #     comments: true
-  #     share: true
-  # # Finance defaults
-  # - scope:
-  #     path: "_financePosts"
-  #     type: recipes
-  #   values:
-  #     layout: post
-  #     comments: true
-  #     share: true
+# # Front Matter Defaults
+# defaults:
+#   # Post defaults
+#   - scope:
+#       path: "_devPosts"
+#       type: posts
+#     values:
+#       layout: post
+#       comments: true
+#       share: true
+#   # CreativeCoding defaults
+#   # - scope:
+#   #     path: "_creativeCodingPosts"
+#   #     type: recipes
+#   #   values:
+#   #     layout: post
+#   #     comments: true
+#   #     share: true
+#   # # Finance defaults
+#   # - scope:
+#   #     path: "_financePosts"
+#   #     type: recipes
+#   #   values:
+#   #     layout: post
+#   #     comments: true
+#   #     share: true
 
-# Site Author
-author:
-  name: So Sun Park
-  picture: /images/sosunny_logo.png
-  email:
-  links:
-    - title: Instagram
-      url: https://instagram.com/sosunny1103
-      icon: fab fa-instagram
-    - title: GitHub
-      url: https://github.com/sosunnyproject
-      icon: fab fa-github-square
+# # Site Author
+# author:
+#   name: So Sun Park
+#   picture: /images/sosunny_logo.png
+#   email:
+#   links:
+#     - title: Instagram
+#       url: https://instagram.com/sosunny1103
+#       icon: fab fa-instagram
+#     - title: GitHub
+#       url: https://github.com/sosunnyproject
+#       icon: fab fa-github-square
 
-# Footer Links
-footer_links:
-  - title: Instagram
-    url: https://instagram.com/sosunny1103
-    icon: fab fa-instagram
-  - title: GitHub
-    url: https://github.com/sosunnyproject
-    icon: fab fa-github-square
-  # - title: Feed
-  #   url: atom.xml
-  #   icon: fas fa-rss-square
+# # Footer Links
+# footer_links:
+#   - title: Instagram
+#     url: https://instagram.com/sosunny1103
+#     icon: fab fa-instagram
+#   - title: GitHub
+#     url: https://github.com/sosunnyproject
+#     icon: fab fa-github-square
+#   # - title: Feed
+#   #   url: atom.xml
+#   #   icon: fas fa-rss-square

@@ -6,10 +6,10 @@
   url: /devposts/
 - title: categories
   url: /categories/
-# - title: creativecoding
-#   url: /creativecoding/
-# - title: finance
-#   url: /finance/
+- title: creativecoding
+  url: /creativecoding/
+- title: finance
+  url: /finance/
 # - title: Tags
 #   url: /tags/
 # - title: Recipes

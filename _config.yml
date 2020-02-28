@@ -88,22 +88,22 @@ defaults:
     values:
       layout: post
       share: true
-  #   # CreativeCoding defaults
-  # - scope:
-  #     path: "_creativeCodingPosts"
-  #     type: recipes
-  #   values:
-  #     layout: post
-  #     comments: true
-  #     share: true
-  # # Finance defaults
-  # - scope:
-  #     path: "_financePosts"
-  #     type: recipes
-  #   values:
-  #     layout: post
-  #     comments: true
-  #     share: true
+    # CreativeCoding defaults
+  - scope:
+      path: "_creativeCodingPosts"
+      type: recipes
+    values:
+      layout: post
+      comments: true
+      share: true
+  # Finance defaults
+  - scope:
+      path: "_financePosts"
+      type: recipes
+    values:
+      layout: post
+      comments: true
+      share: true
 
 # Site Author
 author:
@@ -128,7 +128,7 @@ footer_links:
     icon: fab fa-github-square
   - title: LinkedIn
     url: https://linkedin.com/in/sosunpark
-    icon: fab fa-linkedin-square
+    icon: fab fa-linkedin
   # - title: Feed
   #   url: atom.xml
   #   icon: fas fa-rss-square
