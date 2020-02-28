@@ -91,17 +91,25 @@ defaults:
 
 # Site Author
 author:
-  name:
-  picture:
+  name: So Sun Park
+  picture: /images/sosunny_logo.png
   email:
-  twitter:
   links:
-    - title:
-      url:
-      icon:
+    - title: Instagram
+      url: https://instagram.com/sosunny1103
+      icon: fab fa-instagram
+    - title: GitHub
+      url: https://github.com/sosunnyproject
+      icon: fab fa-github-square
 
 # Footer Links
 footer_links:
-  - title: Feed
-    url: atom.xml
-    icon: fas fa-rss-square
+  - title: Instagram
+    url: https://instagram.com/sosunny1103
+    icon: fab fa-instagram
+  - title: GitHub
+    url: https://github.com/sosunnyproject
+    icon: fab fa-github-square
+  # - title: Feed
+  #   url: atom.xml
+  #   icon: fas fa-rss-square
