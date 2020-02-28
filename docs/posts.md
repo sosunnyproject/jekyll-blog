@@ -1,5 +1,5 @@
 ---
-title: Post Archive
+title: 개발
 layout: posts
 permalink: /posts/
 show_excerpts: true

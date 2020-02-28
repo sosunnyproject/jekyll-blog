@@ -1,5 +1,13 @@
 ---
-layout: default
+title: "Today-I-Learned-2018"
+categories:
+  - til-list
+tags:
+  - content
+  - css
+  - edge case
+  - lists
+  - markup
 ---
 
 # List of Contents

@@ -1,5 +1,13 @@
 ---
-layout: default
+title: "devlog-list-2018"
+categories:
+  - devlog
+tags:
+  - content
+  - css
+  - edge case
+  - lists
+  - markup
 ---
 
 ## List of Contents
