@@ -1,11 +1,11 @@
 ---
 title: dev
 layout: posts
-permalink: /posts/
+permalink: /devposts/
 show_excerpts: true
 entries_layout: list
 categories:
-  - devlog
+  - dev
 tags:
   - content
   - css

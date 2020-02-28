@@ -2,10 +2,10 @@
 
 - title: Home
   url: /
-- title: 개발
-  url: /devStudy/
-- title: 크리에이티브코딩
-  url: /creativeCoding/
+- title: dev
+  url: /devposts/
+- title: categories
+  url: /categories/
 # - title: Tags
 #   url: /tags/
 # - title: Recipes
