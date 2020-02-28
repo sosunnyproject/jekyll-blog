@@ -82,21 +82,21 @@ defaults:
       comments: true
       share: true
   # CreativeCoding defaults
-  - scope:
-      path: "_creativeCodingPosts"
-      type: recipes
-    values:
-      layout: post
-      comments: true
-      share: true
-  # Finance defaults
-  - scope:
-      path: "_financePosts"
-      type: recipes
-    values:
-      layout: post
-      comments: true
-      share: true
+  # - scope:
+  #     path: "_creativeCodingPosts"
+  #     type: recipes
+  #   values:
+  #     layout: post
+  #     comments: true
+  #     share: true
+  # # Finance defaults
+  # - scope:
+  #     path: "_financePosts"
+  #     type: recipes
+  #   values:
+  #     layout: post
+  #     comments: true
+  #     share: true
 
 # Site Author
 author:
