@@ -1,7 +1,7 @@
 ---
 title: dev
 layout: posts
-permalink: /devposts/
+permalink: /posts/
 show_excerpts: true
 entries_layout: list
 categories:

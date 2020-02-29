@@ -3,7 +3,7 @@ remote_theme: "mmistakes/so-simple-theme@3.2.0"
 locale: en-US
 title: "SOSUNNYPROJECT"
 description: "sosun's blog 2020"
-baseurl: "/blog"
+baseurl: "/"
 url: "https://sosunnyproject.github.io"
 logo: "/images/sosunny_logo.png"
 date_format: "%B %-d, %Y"
