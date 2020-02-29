@@ -21,7 +21,7 @@ title: ""
 description: "welcome to sosunnyproject"
 baseurl: "/" # the subpath of your site, e.g. "/blog"
 url: "https://sosunnyproject.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: "/sosunny_logo.png"
+logo: "sosunny_logo.png"
 date_format: "%B %-d, %Y"
 read_time: # reading time estimates, e.g. true
 words_per_minute: # 200
@@ -79,16 +79,16 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-collections:
-  recipes:
-    output: true
-    permalink: /:collection/:path/
+# collections:
+#   recipes:
+#     output: true
+#     permalink: /:collection/:path/
 
 # Front Matter Defaults
 defaults:
   # Posts defaults
   - scope:
-      path: "/docs/_posts"
+      path: "_posts"
       type: posts
     values:
       layout: post

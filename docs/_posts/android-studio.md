@@ -1,4 +1,6 @@
 ---
+layout: post
+categories: dev
 title: "Android"
 last_modified_at: 2018-03-09T13:01:27-05:00
 ---

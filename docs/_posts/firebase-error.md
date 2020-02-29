@@ -1,4 +1,6 @@
 ---
+layout: post
+categories: dev
 title: "Firebase Error Log"
 last_modified_at: 2019-03-09T13:01:27-05:00
 ---
