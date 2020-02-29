@@ -1,16 +1,16 @@
 # Sample Authors
 # Remove file or replace with your own
 
-Billy Rick:
-  name: Billy Rick
-  picture: /images/bio-photo-2.jpg
-  twitter: "@billyrick"
+So Sun:
+  name: So Sun
+  picture: /images/sosunny_logo.png
   links:
-    - title: Twitter
-      url: https://twitter.com/billyrick
-      icon: fab fa-twitter-square
-
-Cornelius Fiddlebone:
-  name: Cornelius Fiddlebone
-  picture: /images/bio-photo.jpg
-  twitter: corneliusfiddlebone
+    - title: Instagram
+      url: https://instagram.com/sosunny1103
+      icon: fab fa-instagram
+    - title: GitHub
+      url: https://github.com/sosunnyproject
+      icon: fab fa-github-square
+    - title: LinkedIn
+      url: https://linkedin.com/in/sosunpark
+      icon: fab fa-linkedin-square

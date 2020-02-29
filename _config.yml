@@ -17,11 +17,11 @@
 remote_theme: "mmistakes/so-simple-theme@3.2.0" 
 skin: "/assets/css/skins/default.css"
 locale: en-US
-title: "My Awesome Site"
+title: ""
 description: "welcome to sosunnyproject"
 baseurl: "/" # the subpath of your site, e.g. "/blog"
 url: "https://sosunnyproject.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: # path of site logo, e.g. "/images/logo.png"
+logo: "/sosunny_logo.png"
 date_format: "%B %-d, %Y"
 read_time: # reading time estimates, e.g. true
 words_per_minute: # 200
@@ -83,25 +83,52 @@ plugins:
 defaults:
   # Posts defaults
   - scope:
-      path: "_posts"
+      path: "_devPosts"
       type: posts
     values:
       layout: post
       share: true
+    # CreativeCoding defaults
+  - scope:
+      path: "_creativeCodingPosts"
+      type: recipes
+    values:
+      layout: post
+      comments: true
+      share: true
+  # Finance defaults
+  - scope:
+      path: "_financePosts"
+      type: recipes
+    values:
+      layout: post
+      comments: true
+      share: true
 
 # Site Author
 author:
-  name:
-  picture:
+  name: So Sun Park
+  picture: /images/sosunny_logo.png
   email:
-  twitter:
   links:
-    - title:
-      url:
-      icon:
+    - title: Instagram
+      url: https://instagram.com/sosunny1103
+      icon: fab fa-instagram
+    - title: GitHub
+      url: https://github.com/sosunnyproject
+      icon: fab fa-github-square
 
 # Footer Links
 footer_links:
-  - title: Feed
-    url: atom.xml
-    icon: fas fa-rss-square
+  - title: Instagram
+    url: https://instagram.com/sosunny1103
+    icon: fab fa-instagram
+  - title: GitHub
+    url: https://github.com/sosunnyproject
+    icon: fab fa-github-square
+  - title: LinkedIn
+    url: https://linkedin.com/in/sosunpark
+    icon: fab fa-linkedin
+  # - title: Feed
+  #   url: atom.xml
+  #   icon: fas fa-rss-square

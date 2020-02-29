@@ -1,3 +1,12 @@
+---
+title: "Geth Start"
+categories:
+  - dev
+tags:
+  - dev
+  - blockchain
+last_modified_at: 2017-03-09T13:01:27-05:00
+---
 
 ## 윈도우 환경: 초기에 geth 빌드/컴파일하기
 - [이더리움웹사이트](https://ethereum.github.io/go-ethereum/downloads/) 에서 윈도우용 exe 파일을 다운로드 한다.
