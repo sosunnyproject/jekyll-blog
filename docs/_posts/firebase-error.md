@@ -1,11 +1,6 @@
 ---
 title: "Firebase Error Log"
-categories:
-  - dev
-tags:
-  - dev
-  - firebase
-last_modified_at: 2017-03-09T13:01:27-05:00
+last_modified_at: 2019-03-09T13:01:27-05:00
 ---
 
 > also here: https://github.com/poscoict-arvrmr/docs/blob/master/note/second-manual20180124.md 

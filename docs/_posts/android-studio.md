@@ -1,11 +1,6 @@
 ---
 title: "Android"
-categories:
-  - dev
-tags:
-  - dev
-  - firebase
-last_modified_at: 2017-03-09T13:01:27-05:00
+last_modified_at: 2018-03-09T13:01:27-05:00
 ---
 android studio install manual
 
