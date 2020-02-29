@@ -4,12 +4,12 @@
   url: /
 - title: dev
   url: /devposts/
-- title: categories
-  url: /categories/
 - title: creativecoding
   url: /creativecoding/
 - title: finance
   url: /finance/
+- title: categories
+  url: /categories/
 # - title: Tags
 #   url: /tags/
 # - title: Recipes
