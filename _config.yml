@@ -97,8 +97,8 @@ defaults:
 
 # Site Author
 author:
-  name: So Sun Park
-  picture: /images/sosunny_logo.png
+  name: So Sun
+  picture: sosunny_logo.png
   email:
   links:
     - title: Instagram
@@ -107,6 +107,9 @@ author:
     - title: GitHub
       url: https://github.com/sosunnyproject
       icon: fab fa-github-square
+    - title: LinkedIn
+      url: https://linkedin.com/in/sosunpark
+      icon: fab fa-linkedin
 
 # Footer Links
 footer_links:

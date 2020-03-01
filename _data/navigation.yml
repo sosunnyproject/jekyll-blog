@@ -2,6 +2,8 @@
 
 - title: Home
   url: /
+- title: about
+  url: /about/
 - title: dev
   url: /dev/
 - title: creativecoding
@@ -10,8 +12,7 @@
   url: /finance/
 - title: daily
   url: /daily/
-- title: about
-  url: /about/
+
 
 # - title: categories
 #   url: /categories/
