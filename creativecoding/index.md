@@ -1,7 +1,7 @@
 ---
 layout: category
-title: daily
-excerpt: "random daily record"
+title: creativecoding
+excerpt: "creativecoding projects"
 search_omit: true
-taxonomy: daily
+taxonomy: creativecoding
 ---

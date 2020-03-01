@@ -3,6 +3,7 @@ layout: post
 categories: dev
 title: "바닐라 JS 챌린지 day06"
 date: 2019-02-02T13:01:27-05:00
+last_modified_at: 2019-02-02T13:01:27-05:00
 share: true
 ---
 

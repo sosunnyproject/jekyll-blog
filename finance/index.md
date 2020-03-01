@@ -1,7 +1,7 @@
 ---
 layout: category
-title: daily
-excerpt: "random daily record"
+title: finance
+excerpt: "finance study"
 search_omit: true
-taxonomy: daily
+taxonomy: finance
 ---
