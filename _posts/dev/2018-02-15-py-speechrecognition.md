@@ -1,13 +1,7 @@
 ---
 title: "python speech recognition"
 layout: post
-categories:
-  - dev
-tags:
-  - dev
-  - python
-  - machine learning
-  - speech recognition
+categories: dev
 date: 2018-02-15T13:01:27-05:00
 last_modified_at: 2018-02-15T13:01:27-05:00
 share: false

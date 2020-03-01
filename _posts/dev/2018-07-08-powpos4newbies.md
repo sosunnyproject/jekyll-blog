@@ -1,12 +1,7 @@
 ---
 title: "블록체인: pow pos (스튜디오디센트럴)"
 layout: post
-categories:
-  - dev
-tags:
-  - dev
-  - hyperledger
-  - blockchain
+categories: dev
 date: 2018-07-08T13:01:27-05:00
 last_modified_at: 2018-07-08T13:01:27-05:00
 share: false

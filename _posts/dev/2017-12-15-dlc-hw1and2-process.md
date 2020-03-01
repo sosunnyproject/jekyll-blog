@@ -3,6 +3,7 @@ layout: post
 categories: dev
 title: "딥러닝칼리지 cs231n HW (2017)"
 date: 2017-12-15T13:01:27-05:00
+last_modified_at: 2017-12-15T13:01:27-05:00
 share: false
 ---
 

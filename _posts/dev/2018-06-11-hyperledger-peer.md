@@ -1,12 +1,7 @@
 ---
 title: "hyperLedger: architecture"
 layout: post
-categories:
-  - dev
-tags:
-  - dev
-  - hyperledger
-  - blockchain
+categories: dev
 date: 2018-06-11T13:01:27-05:00
 last_modified_at: 2018-06-11T13:01:27-05:00
 share: false

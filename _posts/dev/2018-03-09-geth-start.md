@@ -1,11 +1,7 @@
 ---
 title: "이더리움 Geth 개념 공부"
 layout: post
-categories:
-  - dev
-tags:
-  - dev
-  - blockchain
+categories: dev
 date: 2018-03-09T13:01:27-05:00
 last_modified_at: 2018-03-09T13:01:27-05:00
 share: false
