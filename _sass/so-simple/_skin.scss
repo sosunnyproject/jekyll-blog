@@ -10,11 +10,12 @@ body {
 }
 
 a {
-  color: $accent-color;
+  color: $base0c; 
 
   &:hover {
-    color: shade($accent-color, 25%);
+    color: shade($base0c, 25%);
   }
+  // $accent-color
 }
 
 blockquote {
