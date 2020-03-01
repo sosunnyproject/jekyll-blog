@@ -2,8 +2,8 @@
 layout: post
 categories: dev
 title: "android studio install manual"
-date: 2019-03-08T13:01:27-05:00
-last_modified_at: 2019-03-09T13:01:27-05:00
+date: 2018-01-08T13:01:27-05:00
+last_modified_at: 2018-01-09T13:01:27-05:00
 share: false
 ---
 

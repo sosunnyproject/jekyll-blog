@@ -2,8 +2,8 @@
 layout: post
 categories: dev
 title: "Firebase Error Log"
-date: 2019-03-06T13:01:27-05:00
-last_modified_at: 2019-03-09T13:01:27-05:00
+date: 2018-01-06T13:01:27-05:00
+last_modified_at: 2018-01-06T13:01:27-05:00
 share: false
 ---
 
