@@ -98,7 +98,7 @@ defaults:
 # Site Author
 author:
   name: So Sun
-  picture: sosunny_logo.png
+  picture: /images/sosunny_logo.png
   email:
   links:
     - title: Instagram
