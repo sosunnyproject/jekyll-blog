@@ -17,8 +17,8 @@
 remote_theme: "mmistakes/so-simple-theme@3.2.0" 
 skin: "/assets/css/skins/default.css"
 locale: en-US
-title: ""
-description: "welcome to sosunnyproject"
+title: "sosunnyproject"
+description: "artist & developer & writer"
 baseurl: "/" # the subpath of your site, e.g. "/blog"
 url: "https://sosunnyproject.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: "sosunny_logo.png"
