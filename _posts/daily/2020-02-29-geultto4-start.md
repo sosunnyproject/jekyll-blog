@@ -1,11 +1,12 @@
 ---
-layout: home
-limit: 10
-show_excerpts: true
-entries_layout: list
-title: 2020 글또로 시작하는 블로그
+layout: post
+categories: dev
+title: " 2020 글또로 시작하는 블로그"
+date: 2020-02-29T13:01:27-05:00
+last_modified_at: 2020-03-01T13:01:27-05:00
+share: true
 ---
- 
+
 2020년이 벌써 2달이나 지났나 하는 한숨보다는 나름 60일을 정신없이 바쁘게 보냈다고 토닥여본다.
 
 ## 나에게 맞는 블로그 찾기
