@@ -5,7 +5,8 @@
 body {
   color: $text-color;
   background: $background-color;
-  border-top-color: $nav-background-color;
+  border-top-color: $base0c; 
+  // $nav-background-color;
 }
 
 a {
@@ -69,12 +70,14 @@ blockquote {
 .site-nav {
   ul {
     color: $nav-color;
-    background-color: $nav-background-color;
+    background-color: $base0c;
+    // $nav-background-color;
   }
 
   a {
     color: $nav-color;
-    border-color: $nav-background-color;
+    border-color: $base0c;
+    // $nav-background-color;
 
     &:hover {
       border-color: $nav-color;
@@ -98,7 +101,7 @@ blockquote {
   border-color: mix(#fff, $border-color, 25%);
 
   h2 {
-    color: $base05;
+    color: $base09;
     background-color: $base00;
   }
 
@@ -110,7 +113,7 @@ blockquote {
     a {
       &:hover,
       &:focus {
-        border-bottom: 1px dotted $border-color;
+        border-bottom: 1px dotted $base09;
       }
     }
   }
