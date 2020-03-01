@@ -2,7 +2,9 @@
 layout: post
 categories: dev
 title: "Firebase Error Log"
+date: 2019-03-06T13:01:27-05:00
 last_modified_at: 2019-03-09T13:01:27-05:00
+share: false
 ---
 
 > also here: https://github.com/poscoict-arvrmr/docs/blob/master/note/second-manual20180124.md 

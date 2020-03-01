@@ -3,13 +3,13 @@
 - title: Home
   url: /
 - title: dev
-  url: /posts/
-- title: creativecoding
-  url: /creativecoding/
-- title: finance
-  url: /finance/
-- title: categories
-  url: /categories/
+  url: /dev/
+# - title: creativecoding
+#   url: /creativecoding/
+# - title: finance
+#   url: /finance/
+# - title: categories
+#   url: /categories/
 # - title: Tags
 #   url: /tags/
 # - title: Recipes
