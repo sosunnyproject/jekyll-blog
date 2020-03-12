@@ -57,12 +57,10 @@ h6 {
 
 h1 {
   @include fluid-type($min-vw, $max-vw, $h1-min, $h1-max);
-  color: #2aa198;
 }
 
 h2 {
   @include fluid-type($min-vw, $max-vw, $h2-min, $h2-max);
-  color: #2aa198;
 }
 
 h3 {
