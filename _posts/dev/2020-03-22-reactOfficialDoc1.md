@@ -104,9 +104,11 @@ setInterval(tick, 1000);
 
 - ReactDOM은 해당 엘리먼트와 그 자식엘리먼트를, 이전 엘리먼트와 비교한 후, 필요한 경우에만 업데이트한다.
     - 위의 예시 코드에서, div 안에 
+
     ```html 
     <h1>Hello, world!</h1>
     <h2>It is {new Date().toLocaleTimeString()}.</h2> 
     ```
+    
     여러 children이 있어도, 계속 변해야 하는 h2 엘리먼트만 업데이트 한다.
 

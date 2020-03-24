@@ -61,6 +61,7 @@ ReactDOM.render(
 
 ### 4. Extracting Components 
  > 컴포넌트를 작은 단위로 쪼개는 것은 굳.
+
 ```js
 function Avatar(props) {
     return ( 
@@ -151,7 +152,7 @@ class Clock extends React.Component {
 
 > 단, 지금 이 상태에서는 tick/timer 업데이트가 이루어지지 않는다
 
-```JSX
+```js
 class Clock extends React.Component {
     constructor(props) {
         super(props);
@@ -185,7 +186,7 @@ ReactDOM.render(
 4. 브라우저는 매초에 tick 메소드를 호출한다. 그 내부에서는, Clock 컴포넌트가 setState()에 현재 시간이 담긴 객체를 호출하면서 UI를 업데이트 한다. setState() 호출 덕분에 리액트는 state가 바뀐 것을 감지하고, render() 메소드를 다시 호출해서 화면에 반영한다. 이번에는, render() 메소드의 this.state.date가 달라져서 렌더링 아웃풋에는 업데이트된 시간이 반영된다. 따라서 리액트는 DOM을 업데이트 한다.
 5. Clock 컴포넌트가 DOM 에서 제거되는 경우가 있다면, Unmount 메소드가 호출되어서 timer 또한 멈추게 된다.
 
-```JSX
+```js
 import React from 'react';
 
 class Clock extends React.Component {
@@ -217,7 +218,8 @@ class Clock extends React.Component {
 2. State 업데이트는 비동기적일 수 있다. 
     - 리액트 성능을 위헤 여러 setState() 호출이 하나의 업데이트에 한꺼번에 처리될 수도 있다..
     - this.props, this.state가 비동기적으로 업데이트될 수 있기 때문에 다음 state 를 계산할 때 이 값들에 의존해서는 안된다. 
-    ```jsx
+
+    ```js
     // wrong: setState()가 object를 전달받아서 처리하는 경우
     this.setState({ counter: this.state.counter + this.props.increment})
 
