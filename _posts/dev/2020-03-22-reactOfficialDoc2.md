@@ -179,8 +179,9 @@ ReactDOM.render(
 - MOUNTING: Clock 엘리먼트가 DOM에 처음 렌더링 되는 때
 - UNMOUNTING: Clock 에 의해 생성된 DOM 이 제거됐을 때
 
-<실행 순서>
-1. ReactDOM.render() 에 <Clock />이 전달된다. 리액트가 Clock component의 생성자를 호출한다. 생성자에서 `this.state`가 초기 생성된다. 이 state는 나중에 업데이트 된다.
+#### 실행 순서
+
+1. ReactDOM.render() 에 `<Clock />` 이 전달된다. 리액트가 Clock component의 생성자를 호출한다. 생성자에서 `this.state` 가 초기 생성된다. 이 state는 나중에 업데이트 된다.
 2. Clock 컴포넌트의 render() 메소드를 호출한다. 이 때, 리액트는 화면에 무엇을 출력할지 알게 된다. 리액트는 Clock의 렌더링 결과값에 맞춰 DOM을 업데이트 한다.
 3. Clock 결과값이 DOM에 삽입되고, React 는 componentDidMount 라이프사이클 메소드를 호출한다. Clock 컴포넌트는 컴포넌트의 tick 메소드를 1초에 1번 호출하기 위해 브라우저에게 타이머를 만들도록 한다.
 4. 브라우저는 매초에 tick 메소드를 호출한다. 그 내부에서는, Clock 컴포넌트가 setState()에 현재 시간이 담긴 객체를 호출하면서 UI를 업데이트 한다. setState() 호출 덕분에 리액트는 state가 바뀐 것을 감지하고, render() 메소드를 다시 호출해서 화면에 반영한다. 이번에는, render() 메소드의 this.state.date가 달라져서 렌더링 아웃풋에는 업데이트된 시간이 반영된다. 따라서 리액트는 DOM을 업데이트 한다.
@@ -211,6 +212,7 @@ class Clock extends React.Component {
 ```
 
 ### 5. Using State Correctly
+
 - **setState()에 대해서 알아야 할 3가지**
 
 1. State를 직접 바꾸지 말것. 반드시 setState() 메소드를 이용할 것. 오직 생성자에서만 this.state에 바로 값을 assign 할 수 있다.
@@ -229,8 +231,8 @@ class Clock extends React.Component {
     })
     ```
 
-
 3. State 업데이트는 병합 merge 된다
+
     - setState()가 호출되면, 리액트는 현재 state를 하나의 객체로 병합한다. state 안에 여러 엘리먼트가 있고, 한 번에 하나만 업데이트 되더라도, 그 때마다 state 전부를 하나의 객체로 병합한다.
 
 ### 6. Date Flows Down
