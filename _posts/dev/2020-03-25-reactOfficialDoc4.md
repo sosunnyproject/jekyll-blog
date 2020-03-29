@@ -105,3 +105,19 @@ const todoItems = todos.map( (todo, index) =>
         )
     }
 ```
+
+## [Chapter 9. Form](https://ko.reactjs.org/docs/forms.html)
+
+- [순수한 HTML 폼 엘리먼트](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form)와 ReactDOM 폼 엘리먼트는 다소 다르게 동작합니다.
+- HTML: name을 입력받는다.
+- 표준 방식: Controlled Component
+
+### Controlled Component 제어 컴포넌트
+
+- HTML: input, textarea, select 와 같은 폼 엘리먼트는 사용자의 입력을 기반으로 자신의 state를 관리하고 업데이트한다.
+- React: 변경 가능한 state 는 컴포넌트의 state 속성에 유지되며, setState()에 의해 업데이트 된다.
+
+- React state
+    - 폼을 렌더링하는 React 컴포넌트는 폼에 발생하는 사용자 입력값을 제어한다.
+    - CONTROLLED COMPONENT = React에 의해 값이 제어되는 입력 폼 엘리먼트
+
