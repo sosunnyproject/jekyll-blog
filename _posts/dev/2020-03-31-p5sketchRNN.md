@@ -63,3 +63,42 @@ dx: -7.009424007547129
 dy: -2.5481305925730413
 pen: "down"
 ```
+
+4. initial stroke, many strokes
+
+```js
+let sketchRNN;
+let currentStroke;
+let x, y;
+
+// preload function
+
+function setup() {
+  createCanvas(400, 400);
+  sketchRNN.generate(gotStrokePath);
+  x = width/2;
+  y = height/2;
+  console.log('model loaded');
+}
+
+// gotStrokePath function
+
+function draw() {
+  background(220);
+  
+  if (currentStroke) {
+    stroke(0);
+    strokeWeight(4);
+    // 1. initial stroke
+    line(x, y, x+ currentStroke.dx, y + currentStroke.dy); 
+
+    // 3. start currentStroke at latest point
+    x += currentStroke.dx;
+    y += currentStroke.dy;
+
+    // 2. stroke loop
+    currentStroke=null;
+    sketchRNN.generate(gotStrokePath);
+  }
+}
+```
