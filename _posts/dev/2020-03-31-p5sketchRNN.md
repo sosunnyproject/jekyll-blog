@@ -144,6 +144,8 @@ let personDrawing = false;
 function startDrawing() {
   console.log("person is drawing");
   personDrawing = true;
+  x = mouseX;
+  y = mouseY;
 }
 
 // 모델이 그리는 상태
@@ -151,8 +153,6 @@ function sketchRNNStart(){
   console.log("model is drawing");
   personDrawing = false;
   sketchRNN.generate(gotStrokePath);
-  x = mouseX;
-  y = mouseY;
 }
 
 function setup(){
