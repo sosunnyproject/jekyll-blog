@@ -102,3 +102,97 @@ function draw() {
   }
 }
 ```
+
+5. pen 의 상태
+
+- 'down' : 그리는 중
+- 'end': 끝남
+
+```js
+// 전역 변수
+let nextPen = 'down';
+
+function draw(){
+ //...
+  if (nextPen == 'end') {
+    noLoop();
+    return;
+  }
+  if (nextPen == 'down') {
+    line(x, y, x+ currentStroke.dx, y + currentStroke.dy); 
+  }
+  x += currentStroke.dx;
+  y += currentStroke.dy;
+  
+  nextPen = currentStroke.pen;
+    
+}
+```
+
+6. 내 스케치와 SketchRNN 구분하기
+
+```js
+// 전역 변수
+let seedPath = [];         // 사람이 그린 stroke 저장
+let personDrawing = false;
+
+// 사람이 그리는 상태
+function startDrawing() {
+  console.log("person is drawing");
+  personDrawing = true;
+}
+
+// 모델이 그리는 상태
+function sketchRNNStart(){
+  console.log("model is drawing");
+  personDrawing = false;
+  sketchRNN.generate(gotStrokePath);
+  x = mouseX;
+  y = mouseY;
+}
+
+function setup(){
+  let canvas = createCanvas(400, 400);
+  canvas.mousePressed(startDrawing);
+  canvas.mouseReleased(sketchRNNStart);
+  // ...
+}
+
+function draw(){
+  stroke(0);
+  strokeWeight(4);
+  
+  if (personDrawing) {
+    let strokePath = {
+      dx: mouseX - pmouseX,
+      dy: mouseY - pmouseY,
+      pen: 'down'
+    }
+    line(x, y, x + strokePath.dx, y + strokePath.dy);
+    x += strokePath.dx;
+    y += strokePath.dy;
+    
+    seedPath.push(strokePath);
+  }
+}
+```
+
+6. 내가 그린 것을 읽고, 그 이후의 stroke 를 그리도록 하기
+
+- seedPath 데이터를 알려줘야 함
+- sketchRNN.generate(gotStrokePath);
+  - generate 함수는 기존의 stroke 데이터를 변수로 받을 수 있다.
+
+```js
+// 모델이 그리는 상태
+function sketchRNNStart() {
+  console.log("model is drawing");
+  personDrawing = false;
+  sketchRNN.generate(seedPath, gotStrokePath);
+}
+```
+
+7. RDP Line Simplification 알고리즘과 결합
+
+- [RDP points](https://www.youtube.com/watch?v=nSYw9GrakjY)
+- rdp.js 파일 만들기, index.html 에서 import 하기
