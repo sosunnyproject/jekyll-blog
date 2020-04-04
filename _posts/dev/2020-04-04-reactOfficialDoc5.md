@@ -10,37 +10,41 @@ share: false
 ## [Chapter 10 State 끌어올리기](https://ko.reactjs.org/docs/lifting-state-up.html)
 
 - 동일한 데이터에 대한 변경사항을 여러 컴포넌트에 반영해야 할 때
-    - the closest common ancestor 로 state를 끌어올리기
+  - the closest common ancestor 로 state를 끌어올리기
 
 ### 예시 코드: 주어진 온도에서 물이 끓는 지의 여부 추정하는 온도 계산기
     
 ### 1. BoilingVerdict function 컴포넌트
-    - 파라미터: celsius 라는 prop 받아서 이 온도가 물이 끓기에 충분한지 출력
+
+  - 파라미터: celsius 라는 prop 받아서 이 온도가 물이 끓기에 충분한지 출력
 
 ### 2. Calculator Class 컴포넌트
-    - render() : input 
-    - input 태그의 value를 this.state.temperature 에 저장 & BoilingVerdict 에 파라미터로 전달
-    - handleChange(e): setState()
+
+  - render() : input 
+  - input 태그의 value를 this.state.temperature 에 저장 & BoilingVerdict 에 파라미터로 전달
+  - handleChange(e): setState()
 
 ### 3. Celsius & Fahrenheit 추가하기
-    - `const scaleNames = {c: 'Celsius', f: 'Fahrenheit'}`
-    - Calculator 내부 => TemperatureInput Class에 copy
-      - render() 에 scale 추가
+
+  - `const scaleNames = {c: 'Celsius', f: 'Fahrenheit'} `
+  - Calculator 내부 => TemperatureInput Class에 copy
+    - render() 에 scale 추가
     
-    ```js
-      render(){
-        const temp = this.state.temp;
-        const scale = this.props.scale;
-        return(
-          <fieldset>
-            <legend> Enter temp in {scaleNames[scale]}: </legend>
-            <input value={temp} onChange={handleChange} />
-          </fieldset>
-        );
-      }
-    ```
+  ```js
+    render(){
+      const temp = this.state.temp;
+      const scale = this.props.scale;
+      return(
+        <fieldset>
+          <legend> Enter temp in {scaleNames[scale]}: </legend>
+          <input value={temp} onChange={handleChange} />
+        </fieldset>
+      );
+    }
+  ```
 
 ### 4. Calculator 클래스 단순화
+  
   - 문제점: celsius 칸과 fahrenheit 칸의 입력값이 동기화되지 않고, 따로 놈.
 
   ```js
