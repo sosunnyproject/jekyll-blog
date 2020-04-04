@@ -95,3 +95,20 @@ function tryConvert(temp, convert) {
     - onTempChange (Cal) 이 hanldeCelsiusChange, handleFahrenheitChange (Cal) 를 호출해서, setState 한다.
     - setState 후, UI를 업데이트 하기 위해 Cal의 render 메서드를 리액트가 호출한다.
     - setState 해서 업데이트된 this.state.temp 값을 단위에 맞게 변환한 후, TemperatureInput 의 temp props 에 전달한다.
+
+
+## [Chapter 11. 합성 vs 상속: 상속으로 인해 부딪히는 문제들을 합성으로 해결하는 방법](https://ko.reactjs.org/docs/composition-vs-inheritance.html)
+
+- 리액트는 강력한 합성 모델을 가지고 있다.
+- 상속 대신 합성을 사용해 컴포넌트 간에 코드를 재사용하는 것이 좋다.
+
+### 컴포넌트에서 다른 컴포넌트를 담기
+- 특수한 props.children 을 사용해서 자식 엘리먼트를 출력에 그대로 전달할 수 있다.
+- 컴포넌트에 구멍(외부에서 들어와서 채워지는 부분들)이 여러개 있을 수 있다. 
+  - children 대신 다른 props를 생성하는 등 다른 방식으로 고안해야 될 것이다.
+
+### 특수화
+
+- 합성을 이용해서, '구체적인' 컴포넌트가 '일반적인' 컴포넌트를 호출하고, 렌더링하고, props에 값을 전달해서 내용을 구성하게 한다.
+- 클래스 컴포넌트의 경우에도 잘 적용된다. 
+- [코드 예시](https://codepen.io/gaearon/pen/kkEaOZ?editors=0010)
