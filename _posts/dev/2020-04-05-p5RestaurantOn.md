@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: creativecoding
-title: "서울 파인 다이닝 프렌치 고급 레스토랑 후기를 작업으로"
+title: "파인 다이닝 메뉴 디자인 코딩해보기"
 date: 2020-04-05T14:01:27-05:00
 last_modified_at: 2020-04-05T14:01:27-05:00
 share: false
