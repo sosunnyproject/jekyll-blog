@@ -7,6 +7,15 @@ last_modified_at: 2020-03-22T14:01:27-05:00
 share: false
 ---
 
+**리액트 공식 문서 복기**
+- [Chapter2~3](2020-03-22-reactOfficialDoc1.md)
+- [Chapter4~5](2020-03-22-reactOfficialDoc2.md)
+- [Chapter6~7](2020-03-24-reactOfficialDoc3.md)
+- [Chapter8~9](2020-03-25-reactOfficialDoc4.md)
+- [Chapter10~11](2020-04-04-reactOfficialDoc5.md)
+
+***
+
 ### **목표: 리액트 공식문서를 120% 활용할 수 있게끔 익숙해지기**
 - https://reactjs.org/docs/hello-world.html
 - https://reactjs.org/tutorial/tutorial.html 

@@ -1,11 +1,20 @@
 ---
 layout: post
 categories: dev
-title: "REACT JS 공식 문서 파헤치기 (3)"
+title: "REACT JS 공식 문서 파헤치기 (5)"
 date: 2020-03-24T14:01:27-05:00
 last_modified_at: 2020-03-24T14:01:27-05:00
 share: false
 ---
+
+**리액트 공식 문서 복기**
+- [Chapter2~3](2020-03-22-reactOfficialDoc1.md)
+- [Chapter4~5](2020-03-22-reactOfficialDoc2.md)
+- [Chapter6~7](2020-03-24-reactOfficialDoc3.md)
+- [Chapter8~9](2020-03-25-reactOfficialDoc4.md)
+- [Chapter10~11](2020-04-04-reactOfficialDoc5.md)
+
+***
 
 ## [Chapter 10 State 끌어올리기](https://ko.reactjs.org/docs/lifting-state-up.html)
 
