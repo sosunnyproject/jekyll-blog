@@ -86,3 +86,11 @@ function draw(){
   ellipse(loc.x, loc.y, r, r);
 }
 ```
+
+## 1.3 Vector Addition 
+
+- exercise 1.1: separate x, y variables --> use p5.Vector class
+- exercise 1.2: walker example from introduction and convert it to use PVectors
+  - [practice](https://editor.p5js.org/sosunnyproject/sketches/LdMuFLOKh)
+- exercise 1.3: Extend bouncing ball with vectors example into 3D. Make sphere to bounce around a box 
+
