@@ -29,7 +29,7 @@ share: false
 명상 앱에서 들숨날숨을 연습시킬 때, 차가운 공기를 마셔서 내 몸의 온기로 따뜻한 공기를 내뱉는다. 
 그리고 어두운 회색 구름이었던 환경이 나의 따뜻한 날숨으로 인해 점점 밝아진다.
 
-[Zach Lieberman](https://www.instagram.com/zach.lieberman/) 아티스트/교수가 amber, blue 색깔을 이용한 작업을 예전에 많이 했었다. 전에는 그 색들이 딱히 예뻐보이지도 않고 왜 많이 쓰는지 이해가 안되었는데, 나중에 모두연 인터렉티브아트랩에서 lighting 관련 p5js 코드 튜토리얼을 만들다가 불현듯 깨달았다. 
+[Zach Lieberman](https://www.instagram.com/zach.lieberman/) 아티스트/교수가 amber, blue 색깔을 이용한 작업을 예전에 많이 했었다. 전에는 그 색들이 딱히 예뻐보이지도 않고 왜 많이 쓰는지 이해가 안되었는데, 나중에 모두연 인터렉티브아트랩에서 lighting 관련 [p5js 코드 튜토리얼](https://www.notion.so/Light-in-P5-90f4a5b4d66b4a97ad0c71bea4c9f59b)을 만들다가 불현듯 깨달았다. 
 
 내가 예전에 무대조명을 했을 때도, 거의 모든 조명의 베이스는 amber, blue 였다. 이렇게 약간 따뜻한 색감과 약간 차가운 색감은 크게 튀는 부분 없이 그 상황의 분위기(아침/저녁, 온화/냉랭)를 은은하게 연출해준다. 그리고 둘을 합치면 우리가 흔히 보는 neutral 한 하얀 조명이 된다. 
 
@@ -38,6 +38,7 @@ share: false
 amber, blue 가 사람에게 가장 친숙하고 자연스러운 대표적인 색감들이 아닌가 싶다.
 
 현재까지 구상하고 개발한 비쥬얼이다. 3D sphere, lighting 색감을 정해가고 있다.
+
 [짤막한 모션 영상](https://www.instagram.com/p/CAAaueGjkPv/)
 ![img](../../images/lighting3d.png)
 
@@ -46,10 +47,12 @@ amber, blue 가 사람에게 가장 친숙하고 자연스러운 대표적인 �
 
 james turrell 은 PS1MoMA 등 여러 갤러리나 박물관에 전시되는 등 아주 유명한 작가이다. 
 넷플릭스 david letterman - kanye west 인터뷰에서는 칸예가 주일 예배 sunday service 하는 찬양 공간을 james turrell 에게 영감 받아서 쨍한 조명의 힐링되는 분위기로 연출했다는 내용이 있다. 그걸 최근에 보고, 나의 조명 경험이 겹쳐지면서 인상이 깊게 남았었다.
+
 ![james turrell](../../images/jamesTurrell.png)
 - Rising Sun. Image Courtesy of Schmidt Hammer Lassen Architects
 
 olafur eliasson 도 예전부터 알았던 건축 배경의 작가이다. 작년에 넷플릭스에서 olafur 관련 다큐를 보고, 런던에서 하는 특별 전시 사진들을 보고 많은 감동을 받았었다. 
+
 ![olafur](../../images/olafur.png)
 - The Weather Project, Olafur Eliasson
 
