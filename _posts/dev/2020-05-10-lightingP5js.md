@@ -46,8 +46,12 @@ amber, blue 가 사람에게 가장 친숙하고 자연스러운 대표적인 �
 
 james turrell 은 PS1MoMA 등 여러 갤러리나 박물관에 전시되는 등 아주 유명한 작가이다. 
 넷플릭스 david letterman - kanye west 인터뷰에서는 칸예가 주일 예배 sunday service 하는 찬양 공간을 james turrell 에게 영감 받아서 쨍한 조명의 힐링되는 분위기로 연출했다는 내용이 있다. 그걸 최근에 보고, 나의 조명 경험이 겹쳐지면서 인상이 깊게 남았었다.
+![james turrell](../../images/jamesTurrell.png)
+- Rising Sun. Image Courtesy of Schmidt Hammer Lassen Architects
 
 olafur eliasson 도 예전부터 알았던 건축 배경의 작가이다. 작년에 넷플릭스에서 olafur 관련 다큐를 보고, 런던에서 하는 특별 전시 사진들을 보고 많은 감동을 받았었다. 
+![olafur](../../images/olafur.png)
+- The Weather Project, Olafur Eliasson
 
 둘의 공통점을 간단하게 설명한다면, 하나의 큰 공간을 자연의 색이나 일관된 조명으로 가득 채우고 관객에게 그 경험을 맡긴다는 것이다.
 내가 그들에게서 영감받은 부분을 정리한다면, 단순함, 공간성, 자연스러움...?
