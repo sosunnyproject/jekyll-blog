@@ -18,15 +18,21 @@ Throughout many years in New York, I have thought of myself as a person with cle
 
 While these are huge contributions to my evolved stress for last few years, now that I think of these were more like triggers. 
 
-Last year, after series of conversation with the professional, it hit me hard when I found out I am so unkind to myself when I was dissatisfied with my performance and achievement. Blameful questions like 'Why are you so lazy?' , 'Why did you waste your time?' , 'Was that useful and practical?' floated around my mind for many years. 
-After then, I tried to pat my back more than before and give myself more acknowledgement. 
-However, when I felt another block after I got a new job in the midst of covid 19 era, those feelings and questions arose again. This time, I didn't even realize I was getting stressed out until a month later. 
-The worse thing was, such attitude influenced how I processed my personal event that happened around the same time. I was constantly finding the problems from myself. 
-While it is good to grow up, learn something, be more mature, improve day by day, such obsession can sometimes choke you. 
-Even my MBTI result was ENTJ. MY freakin GOD. I got a goosebump while reading it. The word 'growth-oriented' in the explanation was the gist of me.
+Last year, after series of conversation with the professional, it hit me hard when I found out I am so unkind to myself when I was dissatisfied with my performance and achievement. Blameful questions like 'Why are you so lazy?' , 'Why did you waste your time?' , 'Was that useful and practical?' floated around my mind for many years. After then, I tried to pat my back more than before and give myself more acknowledgement. 
 
-I know this is not a bad quality. My aspiration to grow drives me, motivates me, and excites me.
-However, I need to constantly remind myself of these. (and maybe you too, if you're an overachiever)
+However, when I felt another block after I got a new job in the midst of covid 19 era, those feelings and questions arose again. This time, I didn't even realize I was getting stressed out until a month later. 
+
+The worse thing was, such attitude influenced how I processed my personal event that happened around the same time. I was constantly finding the problems from myself. 
+
+While it is good to grow up, learn something, be more mature, improve day by day, such obsession can sometimes choke you. The pressure makes you less concentrated, leads to procrastination or avoidance, then you get to regret, and that creates anothe pressure, then BOOM! a perfect vicious cycle.
+
+Even my MBTI result was ENTJ. MY freakin GOD. 
+
+I got a goosebump while reading it. The word 'growth-oriented' in the explanation was the gist of me. I know this is not a bad quality. My aspiration to grow drives me, motivates me, and excites me.
+
+However, I wanted to get out of pressure and love myself more. *self-love* is also another important key to stop pushing yourself so hard; it helps you become more grateful and satisfied with the present. So I watched some Youtube videos and read few articles to find some good affirmations.
+
+From now on, I'm trying to constantly remind myself of these. (and it'd help you if you're an overachiever as well)
 - Did I compliment and acknowledge my achievement as much as I deserve?
 - Am I doing this for external validation ?
 - Am I kind to myself? 
