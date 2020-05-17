@@ -18,7 +18,20 @@ Throughout many years in New York, I have thought of myself as a person with cle
 
 While these are huge contributions to my evolved stress for last few years, now that I think of these were more like triggers. 
 
-Last year, it hit me hard when I found out I am so unkind to myself. Blameful questions like 'Why are you so lazy?' , 'Why did you waste your time?' , 'Was that useful and practical?' floated around my mind for many years. 
+Last year, after series of conversation with the professional, it hit me hard when I found out I am so unkind to myself when I was dissatisfied with my performance and achievement. Blameful questions like 'Why are you so lazy?' , 'Why did you waste your time?' , 'Was that useful and practical?' floated around my mind for many years. 
+After then, I tried to pat my back more than before and give myself more acknowledgement. 
+However, when I felt another block after I got a new job in the midst of covid 19 era, those feelings and questions arose again. This time, I didn't even realize I was getting stressed out until a month later. 
+The worse thing was, such attitude influenced how I processed my personal event that happened around the same time. I was constantly finding the problems from myself. 
+While it is good to grow up, learn something, be more mature, improve day by day, such obsession can sometimes choke you. 
+Even my MBTI result was ENTJ. MY freakin GOD. I got a goosebump while reading it. The word 'growth-oriented' in the explanation was the gist of me.
+
+I know this is not a bad quality. My aspiration to grow drives me, motivates me, and excites me.
+However, I need to constantly remind myself of these. (and maybe you too, if you're an overachiever)
+- Did I compliment and acknowledge my achievement as much as I deserve?
+- Am I doing this for external validation ?
+- Am I kind to myself? 
+- This is a side-tool to make ME be ME, not a homework or self-restriction.
+- It's okay to take some break and refresh. Find what types of refreshing activity suit you the best!
 
 
 - [The Secret of Becoming Mentally Strong by Amy Morin](https://www.youtube.com/watch?v=TFbv757kup4&t=224s)
