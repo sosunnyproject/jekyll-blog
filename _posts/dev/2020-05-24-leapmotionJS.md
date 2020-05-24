@@ -1,4 +1,11 @@
-
+---
+layout: post
+categories: creativecoding
+title: "LeapMotion x P5JS"
+date: 2020-05-24-T14:01:27-05:00
+last_modified_at: 2020-05-24-T14:01:27-05:00
+share: false
+---
 
 Leap Motion x P5.JS API 파헤치기
 
