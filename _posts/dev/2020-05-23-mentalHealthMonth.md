@@ -7,7 +7,7 @@ last_modified_at: 2020-05-23-T14:01:27-05:00
 share: false
 ---
 
-![mentalHealthMonth2020](../../images/2020MayMentalHealthMonth.PNG)
+![mentalHealthMonth2020](../../images/2020MayMentalHealthMonth.png)
 
 I don't remember when exactly, but it was probably after listening to Ariana Grande, Billie Eilish, and Maggie Rogers.
 

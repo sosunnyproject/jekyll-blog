@@ -9,7 +9,7 @@ share: false
 
 This book made me reminisce the days of my NYC life, including crazy, diverse, and funny people I met in the States. 
 
-![deargirls](../../images/deargirls.PNG)
+![deargirls](../../images/deargirls.png)
 
 As I got used to American culture (or that of East Coast), I became more comfortable talking about my feelings and thought process, which I rarely spoke out loud in Korean except with super close besties. I appreciated how I learned to be honest with my preference, opinion, and emotion. At the same time, as I met so many different people, I tried not to easily judge them because they would also have many layers and characters inside them - sometimes even willing to help them cope with their past traumas (but to be honest, you really don't need to do THAT much). 
 
