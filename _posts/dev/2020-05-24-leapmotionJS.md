@@ -56,8 +56,8 @@ leap motion javascript 스크립트가 두 가지 버젼이 있는데, 둘 다 �
 - 지난 데모 전시에 썼던 p5js 에서의 leap motion 플러그인 API 사용 코드
 
 ![leapmotiontest1](../../images/leapmotiontest1.png)
-**해당 코드 비쥬얼 이미지**
-- 빨간 점이 손의 위치를 가리킨다.
+
+**빨간 점이 손의 위치를 가리킨다. colorful한 원들은 손을 따라가고, 나비들은 손을 피해가는 인터렉션.**
 
 ```js
 let hand = p5.Vector();  // 손의 현재 위치 벡터값
