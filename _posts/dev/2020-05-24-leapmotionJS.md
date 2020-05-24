@@ -22,12 +22,12 @@ leap motion javascript 스크립트가 두 가지 버젼이 있는데, 둘 다 �
 간결 명료한 인터렉션 비쥬얼을 구현하고 싶다는 생각이 들었다.
 
 - [깃험 공식 leap motion js 리포](https://github.com/leapmotion/leapjs)
-- [예제 examples](https://github.com/leapmotion/leapjs/tree/master/examples)
+- [깃헙 예제 링크 examples](https://github.com/leapmotion/leapjs/tree/master/examples)
 
 ## 버젼 1 : leap motion 기본 라이브러리
 
 - 현재 P5에서 작동하는 스크립트 
-- [Leap Motion Test](https://editor.p5js.org/sosunnyproject/sketches/ThUMPizF4)
+- [Leap Motion Test 실행 코드 예제](https://editor.p5js.org/sosunnyproject/sketches/ThUMPizF4)
 - [Leap Motion JS API](https://developer-archive.leapmotion.com/documentation/v2/javascript/index.html)
 
 ```html
