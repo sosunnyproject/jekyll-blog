@@ -63,7 +63,7 @@ share: false
 
 ##  블로그2: Creative Coding
 
-매주 수요일 모두의연구소 양재캠퍼스에서 함께 공부하고 작업물을 공유하는 스터디를 한다. [인터렉티브 아트 랩](https://www.instagram.com/interactive_art_lab/)에서 배운 것들을 활용해 보기도 하고, [p5js 튜토리얼](https://www.youtube.com/user/shiffman), [터치디자이너 튜토리얼](https://www.youtube.com/user/nose2bear) 등을 배워서 내 작업물을 [인스타그램](https://www.instagram.com/sosunny1103/)에 올리고 있다. 
+매주 수요일 모두의연구소 양재캠퍼스에서 함께 공부하고 작업물을 공유하는 스터디를 한다. [인터렉티브 아트 랩](https://www.instagram.com/interactive_art_lab/)에서 배운 것들을 활용해 보기도 하고, [p5js 튜토리얼](https://www.youtube.com/user/shiffman), [터치디자이너 튜토리얼](https://www.youtube.com/user/nose2bear) 등을 배워서 내 작업물을 [인스타그램](https://www.instagram.com/sosunnyproject/)에 올리고 있다. 
 
 인스타그램에 올리는 작업물들, 코드들을 나도 다시 리뷰하고, 분석하고, 과정들을 서술해서 블로그로 포스팅하려고 한다. 그래야지 다음에 코드를 개선하거나 응용할 때, 더 기억에도 남고 빠르게 작업을 발전시킬 수 있을 듯 싶어서.
 
