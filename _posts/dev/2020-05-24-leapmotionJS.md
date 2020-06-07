@@ -3,7 +3,7 @@ layout: post
 categories: creativecoding
 title: "LeapMotion x P5JS"
 date: 2020-05-24-T14:01:27-05:00
-last_modified_at: 2020-05-24-T14:01:27-05:00
+last_modified_at: 2020-06-07-T14:01:27-05:00
 share: false
 ---
 
@@ -11,6 +11,17 @@ Leap Motion x P5.JS API 파헤치기
 
 전시에서 아두이노로 인터렉션을 구현하려다가 언택트 흐름에 맞게 립모션으로 대체하려고 라이브러리 API 를 테스팅하고 있다. 
 leap motion javascript 스크립트가 두 가지 버젼이 있는데, 둘 다 무리없이 작동하는 것 같다. 
+
+## Leap Motion 이란?
+
+Leap Motion은 손바닥만한 카메라 센서 기기이다. 키넥트처럼 인식 범위가 넓지는 않고 보통 손 2개 정도를 커버할 수 있다고 보면 된다. 
+손목부터 손가락 마디마디, 손가락 끝부분까지 생각보다 굉장히 많은 손 관절들의 좌표를 캐치한다. 
+
+내가 처음 사용해본 계기는 VR 이었던 걸로 기억한다. VR 헤드셋 앞쪽에 Leap Motion을 달고 그걸로 움직이는 내 손의 좌표 정보를 앱에 전달해서 게임같은 인터렉션을 할 수 있게 만드는 데모들이 꽤 많았다. 그걸 체험해보고 나서, 대학교 4학년 졸업작품으로 Unity와 Leap Motion을 연동해서 간단한 음악 게임 인터렉션을 구현했었다. 
+
+## Leap Motion을 선택한 이유
+작년에 독일 베를린의 Futurium (tech + art) 박물관을 갔을 때도 전시물 중 하나가 Leap Motion을 사용한 걸 보고, 아직도 꽤 쓰이는 구나 싶었다. 사실 키넥트만큼 파워풀하지는 않아서 잊고 있었는데, 요즘은 전시나 작품을 구상할 때, LESS IS MORE 를 모토로 삼고 있기 때문에 키넥트나 웹캠 대신 Leap Motion을 선택했다. 너무 복잡하게 만들어서 관객이나 사용자에게 '이거는 ~~이렇게 저렇게~~ 해야 한다'라고 설명해줘야 하는 것 자체가 어떻게 보면 경험에 방해가 될 수도 있고, 다양한 리액션이나 happy surprise 를 억제할 수도 있겠다는 생각이 들었다.
+
 
 ![breathebutton](../../images/breathebutton.png)
 
