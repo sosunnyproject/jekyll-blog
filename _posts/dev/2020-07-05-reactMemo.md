@@ -94,7 +94,8 @@ const MyComponent = ({input}) => {
         <Component>
           <div>input*2</div>
         </Component>
-      }, [input]
+      }, [input])
+  )}
 ```
 
 ### 느낀점: React State 자체와 익숙해질 필요가 있다...
