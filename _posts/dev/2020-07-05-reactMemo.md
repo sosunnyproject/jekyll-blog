@@ -24,7 +24,7 @@ share: false
   - 함수를 알아서 실행하고, 새로운 리턴값만 반환한다.
   - 선언된 컴포넌트/클래스 내부에서 사용 가능하다. (React.memo 는 상관 없음)
 
-> 참조: https://medium.com/@jan.hesters/usecallback-vs-usememo-c23ad1dc60
+> 참조: [영문 블로그 useCallback vs useMemo](https://medium.com/@jan.hesters/usecallback-vs-usememo-c23ad1dc60)
 
 ## React.memo vs React.useMemo 사용 문법
 
@@ -48,7 +48,7 @@ const MyComponent = React.memo(function MyComponent(props) {
   - dep 데이터/상태(state) 주소값이 바뀌면, function이 재실행된다. 주소값이 바뀌지 않으면 실행되지 않는다. 
   - 유의점: 내부적으로 깊이가 있는 (겹겹이 key:value 형태인) 오브젝트의 경우, 오브젝트의 특정 value값이 바뀌어도 오브젝트의 주소값은 그대로일 수 있다. **즉, 내부 데이터의 내용이 바뀌었지만, 주소값은 바뀌지 않았으므로 업데이트가 되지 않을 수 있다.**
 
-1. 불가능
+### 불가능
 
 ```js
 const MyComponent = React.useMemo(({input}) => { 
@@ -58,7 +58,7 @@ const MyComponent = React.useMemo(({input}) => {
 export default MyComponent
 ```
 
-2. 가능 (1)
+### 가능 (1)
 
 ```js
 const MyComponent = ({input}) => { 
@@ -71,7 +71,7 @@ const MyComponent = ({input}) => {
 }
 ```
 
-3. 가능 (2)
+### 가능 (2)
 
 ```js
 const MyComponent = ({input}) => { 
@@ -84,7 +84,7 @@ const MyComponent = ({input}) => {
 }
 ```
 
-4. 가능 (3) - 현재 쓰고 있는 문법 형태
+### 가능 (3) - 현재 쓰고 있는 문법 형태
 
 ```js
 const MyComponent = ({input}) => { 
@@ -98,20 +98,18 @@ const MyComponent = ({input}) => {
   )}
 ```
 
-### 느낀점: React State 자체와 익숙해질 필요가 있다...
+### *느낀점: React State 자체와 익숙해질 필요가 있다...*
 
 리액트에서 리덕스, api fetch/axios 로 데이터를 통신하고 업데이트하다보면 props 보다 state 상태 관리에 더 많은 머리를 써야 한다는 걸 느꼈다. useMemo 뿐만 아니라 기본적인 state 관리에도 아직 헷갈리는 게 많아서 차근차근 여러 case들을 모아 정리하려고 한다. 
 
 
 ### Other Reference Links
-- 리액트 최적화 [Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html#avoid-reconciliation)
-- https://medium.com/@jan.hesters/usecallback-vs-usememo-c23ad1dc60
-- https://react.vlpt.us/basic/19-React.memo.html
-- https://medium.com/vingle-tech-blog/react-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-f255d6569849
-- https://velog.io/@velopert/react-hooks
-- https://www.digitalocean.com/community/tutorials/react-usememo
-- https://haeguri.github.io/2019/10/13/react-hooks-basic/
-- https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#what-about-memoization
-- https://blog.bitsrc.io/optimize-your-react-functional-components-with-usecallback-and-usememo-34bb52bc9a13
+- [리액트 공식 문서: 최적화 Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html#avoid-reconciliation)
+- [useCallback vs useMemo: 영문](https://medium.com/@jan.hesters/usecallback-vs-usememo-c23ad1dc60)
+- [벨로퍼트 react memo](https://react.vlpt.us/basic/19-React.memo.html)
+- [vingle 테크 블로그: react-렌더링-이해하기](https://medium.com/vingle-tech-blog/react-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-f255d6569849)
+- [리액트 usememo 튜토리얼 : 영문](https://www.digitalocean.com/community/tutorials/react-usememo)
+- [리액트 공식블로그 - memoization: 영문](https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#what-about-memoization)
+- [함수형 컴포넌트와 useCallback, useMemo: 영문](https://blog.bitsrc.io/optimize-your-react-functional-components-with-usecallback-and-usememo-34bb52bc9a13)
 
 
