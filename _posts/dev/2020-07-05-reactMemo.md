@@ -2,7 +2,7 @@
 layout: post
 categories: dev
 title: "React.useMemo 가볍게 살펴보기"
-date: 2020-04-09T14:01:27-05:00
+date: 2020-07-05T14:01:27-05:00
 last_modified_at: 2020-07-05T14:01:27-05:00
 share: false
 ---
@@ -85,6 +85,7 @@ const MyComponent = ({input}) => {
 ```
 
 4. 가능 (3) - 현재 쓰고 있는 문법 형태
+
 ```js
 const MyComponent = ({input}) => { 
 
