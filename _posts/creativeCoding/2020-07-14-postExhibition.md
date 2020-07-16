@@ -1,9 +1,9 @@
 ---
 layout: post
 categories: creativecoding
-title: "React.useMemo 가볍게 살펴보기"
-date: 2020-07-13T14:01:27-05:00
-last_modified_at: 2020-07-13T14:01:27-05:00
+title: "2020 인터렉티브 아트랩 전시 후기"
+date: 2020-07-14T14:01:27-05:00
+last_modified_at: 2020-07-14T14:01:27-05:00
 share: false
 ---
 
