@@ -5,17 +5,46 @@
 body {
   color: $text-color;
   background: $background-color;
-  border-top-color: $base0c; 
-  // $nav-background-color;
+  border-top-color: $nav-background-color;
 }
 
+.masthead .social-icons a {
+  color: $text-color;
+}
 a {
-  color: $base0c; 
+  color: $accent-color; 
 
   &:hover {
-    color: shade($base0c, 25%);
+    color: shade($accent-color, 25%);
   }
-  // $accent-color
+}
+
+#page-title {
+  color: $accent-color; 
+}
+
+.entry-header .entry-title {
+  color: $accent-color;
+}
+
+h1 {
+  color: $base0a;
+}
+
+h2 {
+  color: $base0b;
+}
+
+h3 {
+  color: $base0c;
+}
+
+h4 {
+  color: $base0d;
+}
+
+h5 {
+  color: $base0e;
 }
 
 blockquote {
@@ -70,15 +99,14 @@ blockquote {
 
 .site-nav {
   ul {
-    color: $nav-color;
-    background-color: $base0c;
-    // $nav-background-color;
+    color: $accent-color;
+    background-color: $nav-background-color;
   }
 
   a {
-    color: $nav-color;
-    border-color: $base0c;
-    // $nav-background-color;
+    color: $accent-color;
+    border: none;
+    border-color: $nav-background-color;
 
     &:hover {
       border-color: $nav-color;
@@ -121,10 +149,7 @@ blockquote {
 }
 
 #menu-toggle {
-  color: $nav-color;
-}
-
-#menu-toggle {
+  color: $accent-color;
   background-color: $nav-background-color;
 }
 

@@ -1,8 +1,9 @@
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll"
+gem "github-pages"
 
-group: jekyll_plugins do
+group :jekyll_plugins do
     gem "jekyll-seo-tag"
-    getm "jekyll-sitemap"
+    gem "jekyll-sitemap"
     gem "jekyll-feed", "~>0.6"
     gem "jekyll-paginate"
 end
