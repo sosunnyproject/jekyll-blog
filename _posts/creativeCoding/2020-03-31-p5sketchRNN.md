@@ -7,11 +7,11 @@ last_modified_at: 2020-03-31T14:01:27-05:00
 share: false
 ---
 
-## 0. template 코드
+# 0. template 코드
 - [p5 온라인 에디터](https://editor.p5js.org/sosunnyproject/sketches/7paSvQE8N)
 - [완성 코드](https://editor.p5js.org/sosunnyproject/sketches/TE0MLII9O)
 
-## 1. index.html 에 src 추가하기
+# 1. index.html 에 src 추가하기
 - [Your index.html](https://learn.ml5js.org/docs/#/tutorials/hello-ml5?id=code)
 
 ```html
@@ -25,7 +25,7 @@ share: false
 </html>
 ```
 
-## 2. QuickStart
+# 2. QuickStart
 
 - 모델을 preload하기 때문에 callback 파라미터는 필요 없다.
 - models 변수 대신에 특정 스트링 배열로 어떤 모델을 호출할지 정한다. 
@@ -48,7 +48,7 @@ function draw() {
 }
 ```
 
-## 3. gotStrokePath() 메소드
+# 3. gotStrokePath() 메소드
 
 - 코드
 
@@ -68,7 +68,7 @@ dy: -2.5481305925730413
 pen: "down"
 ```
 
-## 4. initial stroke, many strokes
+# 4. initial stroke, many strokes
 
 ```js
 let sketchRNN;
@@ -107,7 +107,7 @@ function draw() {
 }
 ```
 
-## 5. pen 의 상태
+# 5. pen 의 상태
 
 - 'down' : 그리는 중
 - 'end': 끝남
@@ -133,7 +133,7 @@ function draw(){
 }
 ```
 
-## 6. 내 스케치와 SketchRNN 구분하기
+# 6. 내 스케치와 SketchRNN 구분하기
 
 ```js
 // 전역 변수
@@ -181,7 +181,7 @@ function draw(){
 }
 ```
 
-## 7. 내가 그린 것을 읽고, 그 이후의 stroke 를 그리도록 하기
+# 7. 내가 그린 것을 읽고, 그 이후의 stroke 를 그리도록 하기
 
 - seedPath 데이터를 알려줘야 함
 - sketchRNN.generate(gotStrokePath);
@@ -196,7 +196,7 @@ function sketchRNNStart() {
 }
 ```
 
-## 8. RDP Line Simplification 알고리즘과 결합
+# 8. RDP Line Simplification 알고리즘과 결합
 
 - [RDP points](https://www.youtube.com/watch?v=nSYw9GrakjY)
 - rdp.js 파일 만들기, index.html 에서 import 하기

@@ -7,7 +7,7 @@ last_modified_at: 2020-04-25T14:01:27-05:00
 share: false
 ---
 
-## 1.1 Bouncing ball with no vectors
+# 1.1 Bouncing ball with no vectors
 
 벡터 클래스 이용 없이 위치, 속력 이동 계산.
 
@@ -41,7 +41,7 @@ function draw(){
 }
 ```
 
-### physics variables
+## physics variables
 - location
 - speed
 - acceleration
@@ -49,7 +49,7 @@ function draw(){
 - wind
 - friction
 
-## 1.2 Vectors for Processing Programmers
+# 1.2 Vectors for Processing Programmers
 - new location = velocity applied to current location
 - location, velocity
 - [p5.Vector 클래스 활용](https://p5js.org/reference/#/p5.Vector)
@@ -87,7 +87,7 @@ function draw(){
 }
 ```
 
-## 1.3 Vector Addition 
+# 1.3 Vector Addition 
 
 - exercise 1.1: separate x, y variables --> use p5.Vector class
 - exercise 1.2: walker example from introduction and convert it to use PVectors
@@ -97,7 +97,7 @@ function draw(){
   - [lighting 3d tutorial](https://www.notion.so/Light-in-P5-90f4a5b4d66b4a97ad0c71bea4c9f59b)
 
 
-## 1.4 Vector Sub / Calculations
+# 1.4 Vector Sub / Calculations
 
 - mouseX, mouseY  - centerX, centerY
 

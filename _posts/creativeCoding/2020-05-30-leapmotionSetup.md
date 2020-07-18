@@ -7,7 +7,7 @@ last_modified_at: 2020-05-30-T14:01:27-05:00
 share: false
 ---
 
-## 1. Set up
+# 1. Set up
 
 - 브라우저 html 파일에 leap motion API & leapJS plugins 추가하기
 - [LeapJS-plugins](https://github.com/leapmotion/leapjs-plugins)으로 LeapJS API 를 좀 더 손쉽게 이용가능하다.
@@ -28,9 +28,9 @@ share: false
 $ npm install leapjs -v0.6.4
 ```
 
-## 2. [Getting Started](https://developer-archive.leapmotion.com/getting-started/javascript)
+# 2. [Getting Started](https://developer-archive.leapmotion.com/getting-started/javascript)
 
-#### Frames
+## Frames
 
 LeapJS 는 로컬의 Leap Service (하드웨어와 연동되는 leap motion 전용 소프트웨어를 지칭하는 것 같다)에서 제공되는 웹소켓 서비스와 연결되어 작동한다. 매 10밀리세컨드마다 서비스가 frame을 웹소켓을 통해 전달한다. 이 frame은 손과 손가락의 위치 데이터를 가지고 있는 JSON 데이터 뭉치이다. 
 
@@ -51,7 +51,7 @@ frame data 를 접근하는 가장 쉬운 방법은 Leap Loop 함수이다.
     - useAllPlugins: 디폴트는 false, [plugins](https://github.com/leapmotion/leapjs/wiki/plugins)
     - loopWhileDisconnected: 디폴트는 true; animation frame loop 이 계속해서 실행된다. 새로운 frame data가 있을 때만 animation loop 을 작동시키고 싶다면 false 로 설정할 수 있지만, 애니메이션이 느려지거나 중간중간 멈출 수 있다.
 
-#### Frame Objects : frame data JSON object
+## Frame Objects : frame data JSON object
 
 - 손가락 하나하나 따로 접근 가능: thumb ~ pinky
 - 손바닥 및 손바닥 아래 관절: carpal
