@@ -33,15 +33,22 @@ share: false
   .grid-left-top{
     grid-column-start: 1;
     grid-row-start: 1;
+    
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
   }
 
   .grid-right-wrap{
     grid-row-start: 1;
     grid-row-end: 4;
+    
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
   }
 
   .grid-left-bottom {
-    grid-row-start: 2;  
+    grid-row-start: 2; 
+    -ms-grid-row: 2;
   }
 
   .item{
