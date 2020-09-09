@@ -23,6 +23,7 @@ share: false
 </figure>
 
 - [stackOverflow](https://stackoverflow.com/questions/45436398/css-grid-auto-placement-in-ie-edge) 에서 Grid auto replacement 는 ie 에서 안먹는다고, nth-child 로밖에 못하나 해서 완전 맥빠졌음
+  - [ie 에러 케이스 예시](https://stackoverflow.com/questions/45124230/css-display-grid-and-or-ms-grid/45131291)
 
 - 1차 시도: flex, grid 를 섞어서 ➡️ 실패
 
